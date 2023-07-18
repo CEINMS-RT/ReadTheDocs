@@ -1,13 +1,10 @@
 Welcome to Lumache's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Welcome to CEINMS. The software for neuromusculoskeletal modeling.
+CEINMS has moved to opensource development so that the community can grow and improve.
+In this documentation we will guide you through the installation process,
+debugging of your installation, tutorials and available plugins.
 
 .. note::
 
