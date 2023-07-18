@@ -16,4 +16,5 @@ Contents
 
 .. toctree::
 
-   Installation
+   Installation `Installation`_
+
