@@ -15,5 +15,4 @@ Contents
 
 .. toctree::
 
-   Introduction
    Installation
