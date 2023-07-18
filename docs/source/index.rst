@@ -1,5 +1,5 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to the documentation of CEINMS
+======================================
 
 Welcome to CEINMS. The software for neuromusculoskeletal modeling.
 CEINMS has moved to opensource development so that the community can grow and improve.
