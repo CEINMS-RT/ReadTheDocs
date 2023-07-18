@@ -1,4 +1,4 @@
-======================================
+
 Welcome to the documentation of CEINMS
 ======================================
 
@@ -16,5 +16,4 @@ Contents
 
 .. toctree::
 
-   Installation `Installation`_
-
+   Installation
