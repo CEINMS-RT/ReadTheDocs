@@ -79,6 +79,56 @@
 <span id="id1"></span><h2>Automatic installation<a class="headerlink" href="#automatic-installation" title="Permalink to this heading"></a></h2>
 <p>clone the <a class="reference external" href="https://bitbucket.org/ctw-bw/ceinms-installer/src/master/">CEINMS installer</a> repository
 by clicking the <code class="docutils literal notranslate"><span class="pre">clone</span></code> button and pressing the copy button or copying</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuration file for the Sphinx documentation builder.</span>
+
+<span class="c1"># -- Project information</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;CEINMS&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s1">&#39;2023, CEINMS&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;CEINMS&#39;</span>
+
+<span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;0.1.1&#39;</span>
+
+<span class="c1"># -- General configuration</span>
+
+<span class="n">pygments_style</span> <span class="o">=</span> <span class="s1">&#39;sphinx&#39;</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.duration&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.autosummary&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;python&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;https://docs.python.org/3/&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+    <span class="s1">&#39;sphinx&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;https://www.sphinx-doc.org/en/master/&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="p">}</span>
+<span class="n">intersphinx_disabled_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;std&#39;</span><span class="p">]</span>
+
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_templates&#39;</span><span class="p">]</span>
+
+<span class="c1"># -- Options for HTML output</span>
+
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;images/CEINMS.png&quot;</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;logo_only&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;display_version&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">copybutton_prompt_text</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;&gt;&gt;&gt; |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: &quot;</span>
+<span class="n">copybutton_prompt_is_regexp</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">copybutton_line_continuation_character</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span>
+<span class="n">copybutton_here_doc_delimiter</span> <span class="o">=</span> <span class="s2">&quot;EOT&quot;</span>
+<span class="n">copybutton_selector</span> <span class="o">=</span> <span class="s2">&quot;div:not(.no-copybutton) &gt; div.highlight &gt; pre&quot;</span>
+
+<span class="c1"># -- Options for EPUB output</span>
+<span class="n">epub_show_urls</span> <span class="o">=</span> <span class="s1">&#39;footnote&#39;</span>
+</pre></div>
+</div>
 </section>
 </section>
 
