@@ -44,7 +44,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#automatic-installation">Automatic installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automatic-installation-windows">Automatic installation [WINDOWS]</a></li>
 </ul>
 </li>
 </ul>
@@ -75,13 +75,25 @@
              
   <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
-<section id="automatic-installation">
-<span id="id1"></span><h2>Automatic installation<a class="headerlink" href="#automatic-installation" title="Permalink to this heading"></a></h2>
-<p>clone the <a class="reference external" href="https://bitbucket.org/ctw-bw/ceinms-installer/src/master/">CEINMS installer</a> repository
+<section id="automatic-installation-windows">
+<span id="id1"></span><h2>Automatic installation [WINDOWS]<a class="headerlink" href="#automatic-installation-windows" title="Permalink to this heading"></a></h2>
+<p>Before we can install CEINMS, we need to get all the required files for installation.
+These can be found on the bitbucket repository. In order to download this repository
+without any issues, we will use git to clone the repository onto our local machine.
+make sure there is a recent version of <a class="reference external" href="https://desktop.github.com/">github desktop</a>
+with <a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash">git bash</a> installed. Now, open
+git bash so we can start the installation. </p>
+<p>move to a local folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
+followed by the path specified above and press enter. </p>
+<p>Now clone the <a class="reference external" href="https://bitbucket.org/ctw-bw/ceinms-installer/src/master/">CEINMS installer</a> repository
 by clicking the <code class="docutils literal notranslate"><span class="pre">clone</span></code> button and pressing the copy button or copying</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
+<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>git clone git@bitbucket.org:ctw-bw/ceinms-installer.git
 </pre></div>
 </div>
+<p>After entering this code, git bash might ask for the passcode to the ssh key connected to bitbucket,
+Simply enter the passcode and the installation will proceed. Now, if we take a look in the folder,
+we find a new folder entry called <code class="docutils literal notranslate"><span class="pre">ceinms-installer</span></code>. inside are all the dependencies required
+and a powershell script called <code class="docutils literal notranslate"><span class="pre">installCEINMS.ps1</span></code>.</p>
 </section>
 </section>
 
