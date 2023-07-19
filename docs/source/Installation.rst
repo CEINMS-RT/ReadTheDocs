@@ -1,3 +1,4 @@
+============
 Installation
 ============
 
@@ -9,4 +10,5 @@ clone the `CEINMS installer <https://bitbucket.org/ctw-bw/ceinms-installer/src/m
 by clicking the ``clone`` button and pressing the copy button or copying
 
 .. code-block:: python
+   :linenos:
    print("Hello world")
