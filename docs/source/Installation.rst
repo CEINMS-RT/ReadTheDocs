@@ -26,4 +26,4 @@ by clicking the ``clone`` button and pressing the copy button or copying
 After entering this code, git bash might ask for the passcode to the ssh key connected to bitbucket,
 Simply enter the passcode and the installation will proceed. Now, if we take a look in the folder,
 we find a new folder entry called ``ceinms-installer``. inside are all the dependencies required
-and a powershell script called ``installCEINMS.ps1``.
+and a powershell script called ``installCEINMS.ps1``. alright
