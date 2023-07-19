@@ -11,6 +11,8 @@ version = '0.1.1'
 
 # -- General configuration
 
+pygments_style = 'sphinx'
+
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
