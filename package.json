@@ -1,0 +1,27 @@
+{
+  "name": "sphinx-copybutton",
+  "description": "test requirements for sphinx-copybutton",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "devDependencies": {
+    "ava": "^3.7.1",
+    "browser-env": "^3.3.0",
+    "esm": "^3.2.25"
+  },
+  "scripts": {
+    "test": "ava -v"
+  },
+  "ava": {
+    "files": [
+      "sphinx_copybutton/_static/test.js"
+    ],
+    "require": [
+      "esm",
+      "./sphinx_copybutton/_static/setup-browser-env.js"
+    ]
+  },
+  "dependencies": {
+    "ci": "^2.1.1"
+  }
+}
