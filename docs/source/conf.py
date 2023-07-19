@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'CEINMS'
-copyright = '2023, Jochem'
-author = 'Jochem'
+copyright = '2023, CEINMS'
+author = 'CEINMS'
 
 release = '0.1'
 version = '0.1.1'
@@ -36,6 +36,12 @@ html_theme_options = {
     'logo_only': True,
     'display_version': False,
 }
+
+copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
+copybutton_prompt_is_regexp = True
+copybutton_line_continuation_character = "\\"
+copybutton_here_doc_delimiter = "EOT"
+copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
