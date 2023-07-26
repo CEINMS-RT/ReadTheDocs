@@ -15,6 +15,9 @@ git bash so we can start the installation. \
 
 move to a local folder like ``C:\Users\<NAME>\AppData\Local`` using the ``cd`` command
 followed by the path specified above and press enter. \
+You may experience git bash telling you there is no such path available. \
+For this error message, the fix might be to change the direction of the slash. \
+This will result in a file path like ``C:/Users/<NAME>/AppData/Local``.
 
 Now clone the `CEINMS installer <https://bitbucket.org/ctw-bw/ceinms-installer/src/master/>`_ repository 
 by clicking the ``clone`` button and pressing the copy button or copying
@@ -41,4 +44,13 @@ in the terminal. Depening on the return, you may need to change your execution p
 
    Get-ExecutionPolicy UnRestricted
 
-You might be prompted with a confirmation, to change the policy quickly, simply type ``A`` followed by ``Enter``.
+You might be prompted with a confirmation, to change the policy quickly, simply type ``A`` followed by ``Enter``. \
+Next, move to the local installation folder like ``C:\Users\<NAME>\AppData\Local\ceinms-installer`` using the ``cd`` command
+followed by the path specified above and press enter. \
+Now, run the following command to start the installation process
+
+.. code-block:: powershell
+
+   ./installCEINMS.ps1
+
+This will activate the powershell script and start installing CEINMS
