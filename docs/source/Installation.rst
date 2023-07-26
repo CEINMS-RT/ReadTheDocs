@@ -7,7 +7,7 @@ Installation
 Automatic installation [WINDOWS]
 ----------------------
 
-If everything is download correctly, we can run the powershell script by running powershell in ``administrator`` mode.
+Now that everything is download correctly, we can run the powershell script by running powershell in ``administrator`` mode.
 This will open a new powershell terminal. Powershell can run with different clearance depending on the execution policy in place.
 To view the execution policy, run the command
 
