@@ -16,5 +16,4 @@ Contents
 
 .. toctree::
 
-   Download
    Installation
