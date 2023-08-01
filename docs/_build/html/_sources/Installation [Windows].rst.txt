@@ -2,7 +2,7 @@
 Installation [Windows]
 ======================
 
-.. _Download:
+.. _Download ref:
 
 Downloading files
 -----------------
@@ -32,7 +32,7 @@ Simply enter the passcode and the installation will proceed. Now, if we take a l
 we find a new folder entry called ``ceinms-installer``. inside are all the dependencies required
 and a powershell script called ``installCEINMS.ps1``.
 
-.. _Installation:
+.. _Installation ref:
 
 Automatic installation
 ----------------------
@@ -62,4 +62,4 @@ Now, run the following command to start the installation process
 
 This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
 during the installation process, frequently encountered error messages and their corresponding fixes are listed
-in the :ref:`Troubleshooter <Troubleshooting>`:
+in the :ref:`Troubleshooter <Trouble ref>`
