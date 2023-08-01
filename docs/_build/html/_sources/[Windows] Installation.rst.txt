@@ -4,8 +4,8 @@ Installation
 
 .. _Download:
 
-Downloading files [WINDOWS]
-----------------------
+Downloading files
+-----------------
 
 Before we can install CEINMS, we need to get all the required files for installation.
 These can be found on the bitbucket repository. In order to download this repository
@@ -34,7 +34,7 @@ and a powershell script called ``installCEINMS.ps1``.
 
 .. _Installation:
 
-Automatic installation [WINDOWS]
+Automatic installation
 ----------------------
 
 Now that everything is download correctly, we can run the powershell script by running powershell in ``administrator`` mode.
