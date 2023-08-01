@@ -2,7 +2,7 @@
 Troubleshooting [Windows]
 =========================
 
-.. _Troubleshooting:
+.. _Trouble ref:
 
 Downloading files
 -----------------
