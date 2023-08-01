@@ -62,4 +62,4 @@ Now, run the following command to start the installation process
 
 This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
 during the installation process, frequently encountered error messages and their corresponding fixes are listed
-in the `Troubleshooting`_
+in the :ref:`Troubleshooter <Troubleshooting>`:
