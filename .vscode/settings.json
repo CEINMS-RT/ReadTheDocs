@@ -1,4 +1,6 @@
 {
-    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source",
-    "restructuredtext.confPath": "${workspaceFolder}\\docs\\source"
+    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/docs/_build/html",
+    "restructuredtext.confPath": "${workspaceFolder}\\docs\\source",
+    "restructuredtext.syntaxHighlighting.disabled": false,
+    "restructuredtext.sphinxBuildPath": "$lbenvPath/bin/sphinx-build",
 }
