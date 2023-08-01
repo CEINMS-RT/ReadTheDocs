@@ -47,6 +47,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Installation [Windows].html">Installation [Windows]</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting [Windows]</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-files">Downloading files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#no-access-to-the-repository">no access to the repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enter-ssh-passphrase">enter ssh passphrase</a></li>
 </ul>
 </li>
 </ul>
@@ -80,19 +82,35 @@
 <section id="downloading-files">
 <span id="trouble-ref"></span><h2>Downloading files<a class="headerlink" href="#downloading-files" title="Permalink to this headline">¶</a></h2>
 <p>When encountering isues downloading files from the repository, the following issues might occur: </p>
-<p><code class="docutils literal notranslate"><span class="pre">no</span> <span class="pre">access</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">repository:</span></code> </p>
-<dl class="field-list simple">
-<dt class="field-odd">Solution</dt>
-<dd class="field-odd"><p>Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
+</section>
+<section id="no-access-to-the-repository">
+<h2>no access to the repository<a class="headerlink" href="#no-access-to-the-repository" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Solution</dt><dd><p>Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
 you won’t be able to download files. Check with the repository administrators or owners to ensure that you have the required access rights.</p>
 </dd>
-<dt class="field-even">Action</dt>
-<dd class="field-even"><p>If further clearance is needed, you should contact the members of the repository and clarify your intentions for accessing the files.
+<dt>Action</dt><dd><p>If further clearance is needed, you should contact the members of the repository and clarify your intentions for accessing the files.
 Politely request additional clearance if required, explaining the purpose and reasons behind your request.</p>
 </dd>
-<dt class="field-odd">Note</dt>
-<dd class="field-odd"><p>Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information.
+<dt>Note</dt><dd><p>Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information.
 Unauthorized access attempts may be flagged and could lead to account suspension or other penalties.</p>
+</dd>
+</dl>
+</section>
+<section id="enter-ssh-passphrase">
+<h2>enter ssh passphrase<a class="headerlink" href="#enter-ssh-passphrase" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt>Solution</dt><dd><p>If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
+the password</p>
+</dd>
+<dt>Action</dt><dd><p>open a command terminal and navigating to <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;UserName&gt;/.ssh</span></code> with the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command. After this, we change the password using the command:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>ssh-keygen -p -f id_rsa
+</pre></div>
+</div>
+<p>You will be prompted to enter the old passphrase, after the old passphrase, you will be prompted to enter a new passphrase.
+Repeat this new passphrase once more if you require to do so. Now, the passphrase has been updated.</p>
+</dd>
+<dt>Note</dt><dd><p>If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.</p>
 </dd>
 </dl>
 </section>
