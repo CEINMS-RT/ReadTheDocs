@@ -46,9 +46,11 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Installation [Windows].html">Installation [Windows]</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting [Windows]</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#downloading-files">Downloading files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#no-access-to-the-repository">no access to the repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#enter-ssh-passphrase">enter ssh passphrase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-files">Downloading files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#no-access-to-the-repository">no access to the repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enter-ssh-passphrase">enter ssh passphrase</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -82,9 +84,8 @@
 <section id="downloading-files">
 <span id="trouble-ref"></span><h2>Downloading files<a class="headerlink" href="#downloading-files" title="Permalink to this headline">¶</a></h2>
 <p>When encountering isues downloading files from the repository, the following issues might occur: </p>
-</section>
 <section id="no-access-to-the-repository">
-<h2>no access to the repository<a class="headerlink" href="#no-access-to-the-repository" title="Permalink to this headline">¶</a></h2>
+<h3>no access to the repository<a class="headerlink" href="#no-access-to-the-repository" title="Permalink to this headline">¶</a></h3>
 <dl class="simple">
 <dt>Solution</dt><dd><p>Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
 you won’t be able to download files. Check with the repository administrators or owners to ensure that you have the required access rights.</p>
@@ -98,7 +99,7 @@ Unauthorized access attempts may be flagged and could lead to account suspension
 </dl>
 </section>
 <section id="enter-ssh-passphrase">
-<h2>enter ssh passphrase<a class="headerlink" href="#enter-ssh-passphrase" title="Permalink to this headline">¶</a></h2>
+<h3>enter ssh passphrase<a class="headerlink" href="#enter-ssh-passphrase" title="Permalink to this headline">¶</a></h3>
 <dl>
 <dt>Solution</dt><dd><p>If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
 the password</p>
@@ -113,6 +114,7 @@ Repeat this new passphrase once more if you require to do so. Now, the passphras
 <dt>Note</dt><dd><p>If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.</p>
 </dd>
 </dl>
+</section>
 </section>
 </section>
 

@@ -10,7 +10,7 @@ Downloading files
 When encountering isues downloading files from the repository, the following issues might occur: \
 
 no access to the repository
----------------------------
++++++++++++++++++++++++++++
 
 Solution\
  Make sure you have proper clearance to access the repository. If you don't have the necessary permissions,
@@ -25,7 +25,7 @@ Note\
  Unauthorized access attempts may be flagged and could lead to account suspension or other penalties.
 
 enter ssh passphrase
---------------------
+++++++++++++++++++++
 
 Solution\
  If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
