@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to the documentation of CEINMS &mdash; CEINMS 0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Compilation [Windows] &mdash; CEINMS 0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -20,7 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation [Windows]" href="Installation [Windows].html" /> 
+    <link rel="next" title="Troubleshooting [Windows]" href="Troubleshooting [Windows].html" />
+    <link rel="prev" title="Installation [Windows]" href="Installation [Windows].html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -31,7 +32,7 @@
 
           
           
-          <a href="#">
+          <a href="index.html">
             
               <img src="_static/CEINMS.png" class="logo" alt="Logo"/>
           </a>
@@ -43,9 +44,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Installation [Windows].html">Installation [Windows]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Compilation [Windows].html">Compilation [Windows]</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Compilation [Windows]</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-gui">CMake-GUI</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Troubleshooting [Windows].html">Troubleshooting [Windows]</a></li>
 </ul>
 
@@ -55,17 +62,17 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">CEINMS</a>
+          <a href="index.html">CEINMS</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to the documentation of CEINMS</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Compilation [Windows]</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Compilation [Windows].rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -73,42 +80,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-the-documentation-of-ceinms">
-<h1>Welcome to the documentation of CEINMS<a class="headerlink" href="#welcome-to-the-documentation-of-ceinms" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to CEINMS. The software for neuromusculoskeletal modeling.
-CEINMS has moved to opensource development so that the community can grow and improve.
-In this documentation we will guide you through the installation process,
-debugging of your installation, tutorials and available plugins.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This project is under active development.</p>
+  <section id="compilation-windows">
+<h1>Compilation [Windows]<a class="headerlink" href="#compilation-windows" title="Permalink to this headline">¶</a></h1>
+<section id="setup">
+<span id="compile-ref"></span><h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure the newest version of CEINMS is installed on your system before proceeding to this section.
+A guide to installing CEINMS can be found in the <a class="reference internal" href="Installation [Windows].html#download-ref"><span class="std std-ref">Installation section</span></a></p>
 </div>
-<section id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Installation [Windows].html">Installation [Windows]</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Installation [Windows].html#downloading-files">Downloading files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Installation [Windows].html#automatic-installation">Automatic installation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Compilation [Windows].html">Compilation [Windows]</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Compilation [Windows].html#setup">Setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Compilation [Windows].html#cmake-gui">CMake-GUI</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Troubleshooting [Windows].html">Troubleshooting [Windows]</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Troubleshooting [Windows].html#downloading-files">Downloading files</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Troubleshooting [Windows].html#no-access-to-the-repository">no access to the repository</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Troubleshooting [Windows].html#enter-ssh-passphrase">enter ssh passphrase</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+<section id="cmake-gui">
+<h3>CMake-GUI<a class="headerlink" href="#cmake-gui" title="Permalink to this headline">¶</a></h3>
+<p>During the installation process, CMake-GUI has been installed on your system. We will now use this software to create
+a visual studio solution from which we can build the CEINMS executable. First, search for CMake-GUI by opening the windows
+search bar. this can be done by pressing the windows key and typing “cmake”. after finding CMake-GUI, open it. </p>
+<p>You will now be greeted with the GUI of CMake, At the top of the window are two important fields: </p>
+<p><code class="docutils literal notranslate"><span class="pre">Where</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">source</span> <span class="pre">code</span></code> and <code class="docutils literal notranslate"><span class="pre">Where</span> <span class="pre">to</span> <span class="pre">build</span> <span class="pre">the</span> <span class="pre">binaries</span></code>.</p>
+</section>
 </section>
 </section>
 
@@ -116,7 +104,8 @@ debugging of your installation, tutorials and available plugins.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Installation [Windows].html" class="btn btn-neutral float-right" title="Installation [Windows]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Installation [Windows].html" class="btn btn-neutral float-left" title="Installation [Windows]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Troubleshooting [Windows].html" class="btn btn-neutral float-right" title="Troubleshooting [Windows]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

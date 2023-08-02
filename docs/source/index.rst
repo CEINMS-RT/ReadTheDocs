@@ -17,4 +17,5 @@ Contents
 .. toctree::
 
    Installation [Windows]
+   Compilation [Windows]
    Troubleshooting [Windows]

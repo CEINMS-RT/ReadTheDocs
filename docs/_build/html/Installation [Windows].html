@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Troubleshooting [Windows]" href="Troubleshooting [Windows].html" />
+    <link rel="next" title="Compilation [Windows]" href="Compilation [Windows].html" />
     <link rel="prev" title="Welcome to the documentation of CEINMS" href="index.html" /> 
 </head>
 
@@ -50,6 +50,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#automatic-installation">Automatic installation</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="Compilation [Windows].html">Compilation [Windows]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Troubleshooting [Windows].html">Troubleshooting [Windows]</a></li>
 </ul>
 
@@ -87,8 +88,8 @@ without any issues, we will use git to clone the repository onto our local machi
 make sure there is a recent version of <a class="reference external" href="https://desktop.github.com/">github desktop</a>
 with <a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash">git bash</a> installed. Now, open
 git bash so we can start the installation. </p>
-<p>move to a local folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
-followed by the path specified above and press enter. You may experience git bash telling you there is no such path available. For this error message, the fix might be to change the direction of the slash. This will result in a file path like <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;NAME&gt;/AppData/Local</span></code>.</p>
+<p>move to a local folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
+followed by the path specified above and press enter. You may experience git bash telling you there is no such path available. For this error message, the fix might be to change the direction of the slash. This will result in a file path like <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;NAME&gt;/AppData/Local/CeinMS</span></code>.</p>
 <p>Now clone the <a class="reference external" href="https://bitbucket.org/ctw-bw/ceinms-installer/src/master/">CEINMS installer</a> repository
 by clicking the <code class="docutils literal notranslate"><span class="pre">clone</span></code> button and pressing the copy button or copying</p>
 <div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>git clone git@bitbucket.org:ctw-bw/ceinms-installer.git
@@ -111,14 +112,17 @@ To view the execution policy, run the command</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">Get-ExecutionPolicy</span> <span class="n">UnRestricted</span>
 </pre></div>
 </div>
-<p>You might be prompted with a confirmation, to change the policy quickly, simply type <code class="docutils literal notranslate"><span class="pre">A</span></code> followed by <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. Next, move to the local installation folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\ceinms-installer</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
+<p>You might be prompted with a confirmation, to change the policy quickly, simply type <code class="docutils literal notranslate"><span class="pre">A</span></code> followed by <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. Next, move to the local installation folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS\ceinms-installer</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
 followed by the path specified above and press enter. Now, run the following command to start the installation process</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">./</span><span class="n">installCEINMS</span><span class="p">.</span><span class="n">ps1</span>
 </pre></div>
 </div>
 <p>This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
 during the installation process, frequently encountered error messages and their corresponding fixes are listed
-in the <a class="reference internal" href="Troubleshooting [Windows].html#trouble-ref"><span class="std std-ref">Troubleshooter</span></a></p>
+in the <a class="reference internal" href="Troubleshooting [Windows].html#trouble-ref"><span class="std std-ref">Troubleshooter</span></a>. If the installation goes on without issues, you should be greeted with a directory
+selection window issuing you to select the output directory of the source code. This can be the same as the directory
+used when downloading the installer; namely, <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS</span></code>. This will create a new folder in that directory
+named ceinms-rt in which the source files are stored, we will use this folder during <a class="reference internal" href="Compilation [Windows].html#compile-ref"><span class="std std-ref">compilation</span></a>.</p>
 </section>
 </section>
 
@@ -127,7 +131,7 @@ in the <a class="reference internal" href="Troubleshooting [Windows].html#troubl
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to the documentation of CEINMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Troubleshooting [Windows].html" class="btn btn-neutral float-right" title="Troubleshooting [Windows]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Compilation [Windows].html" class="btn btn-neutral float-right" title="Compilation [Windows]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

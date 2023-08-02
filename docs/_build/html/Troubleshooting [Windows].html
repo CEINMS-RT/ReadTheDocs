@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Installation [Windows]" href="Installation [Windows].html" /> 
+    <link rel="prev" title="Compilation [Windows]" href="Compilation [Windows].html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,6 +45,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Installation [Windows].html">Installation [Windows]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Compilation [Windows].html">Compilation [Windows]</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting [Windows]</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-files">Downloading files</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#no-access-to-the-repository">no access to the repository</a></li>
@@ -87,13 +88,13 @@
 <section id="no-access-to-the-repository">
 <h3>no access to the repository<a class="headerlink" href="#no-access-to-the-repository" title="Permalink to this headline">¶</a></h3>
 <dl class="simple">
-<dt>Solution</dt><dd><p>Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
+<dt>Solution:</dt><dd><p>Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
 you won’t be able to download files. Check with the repository administrators or owners to ensure that you have the required access rights.</p>
 </dd>
-<dt>Action</dt><dd><p>If further clearance is needed, you should contact the members of the repository and clarify your intentions for accessing the files.
+<dt>Action:</dt><dd><p>If further clearance is needed, you should contact the members of the repository and clarify your intentions for accessing the files.
 Politely request additional clearance if required, explaining the purpose and reasons behind your request.</p>
 </dd>
-<dt>Note</dt><dd><p>Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information.
+<dt>Note:</dt><dd><p>Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information.
 Unauthorized access attempts may be flagged and could lead to account suspension or other penalties.</p>
 </dd>
 </dl>
@@ -101,17 +102,17 @@ Unauthorized access attempts may be flagged and could lead to account suspension
 <section id="enter-ssh-passphrase">
 <h3>enter ssh passphrase<a class="headerlink" href="#enter-ssh-passphrase" title="Permalink to this headline">¶</a></h3>
 <dl>
-<dt>Solution</dt><dd><p>If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
+<dt>Solution:</dt><dd><p>If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
 the password</p>
 </dd>
-<dt>Action</dt><dd><p>open a command terminal and navigating to <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;UserName&gt;/.ssh</span></code> with the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command. After this, we change the password using the command:</p>
+<dt>Action:</dt><dd><p>open a command terminal and navigating to <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;UserName&gt;/.ssh</span></code> with the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command. After this, we change the password using the command:</p>
 <div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>ssh-keygen -p -f id_rsa
 </pre></div>
 </div>
 <p>You will be prompted to enter the old passphrase, after the old passphrase, you will be prompted to enter a new passphrase.
 Repeat this new passphrase once more if you require to do so. Now, the passphrase has been updated.</p>
 </dd>
-<dt>Note</dt><dd><p>If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.</p>
+<dt>Note:</dt><dd><p>If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.</p>
 </dd>
 </dl>
 </section>
@@ -122,7 +123,7 @@ Repeat this new passphrase once more if you require to do so. Now, the passphras
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Installation [Windows].html" class="btn btn-neutral float-left" title="Installation [Windows]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Compilation [Windows].html" class="btn btn-neutral float-left" title="Compilation [Windows]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

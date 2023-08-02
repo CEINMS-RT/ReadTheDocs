@@ -14,11 +14,11 @@ make sure there is a recent version of `github desktop <https://desktop.github.c
 with `git bash <https://www.atlassian.com/git/tutorials/git-bash>`_ installed. Now, open
 git bash so we can start the installation. \
 
-move to a local folder like ``C:\Users\<NAME>\AppData\Local`` using the ``cd`` command
+move to a local folder like ``C:\Users\<NAME>\AppData\Local\CeinMS`` using the ``cd`` command
 followed by the path specified above and press enter. \
 You may experience git bash telling you there is no such path available. \
 For this error message, the fix might be to change the direction of the slash. \
-This will result in a file path like ``C:/Users/<NAME>/AppData/Local``.
+This will result in a file path like ``C:/Users/<NAME>/AppData/Local/CeinMS``.
 
 Now clone the `CEINMS installer <https://bitbucket.org/ctw-bw/ceinms-installer/src/master/>`_ repository 
 by clicking the ``clone`` button and pressing the copy button or copying
@@ -52,7 +52,7 @@ in the terminal. Depening on the return, you may need to change your execution p
    Get-ExecutionPolicy UnRestricted
 
 You might be prompted with a confirmation, to change the policy quickly, simply type ``A`` followed by ``Enter``. \
-Next, move to the local installation folder like ``C:\Users\<NAME>\AppData\Local\ceinms-installer`` using the ``cd`` command
+Next, move to the local installation folder like ``C:\Users\<NAME>\AppData\Local\CeinMS\ceinms-installer`` using the ``cd`` command
 followed by the path specified above and press enter. \
 Now, run the following command to start the installation process
 
@@ -62,4 +62,7 @@ Now, run the following command to start the installation process
 
 This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
 during the installation process, frequently encountered error messages and their corresponding fixes are listed
-in the :ref:`Troubleshooter <Trouble ref>`
+in the :ref:`Troubleshooter <Trouble ref>`. If the installation goes on without issues, you should be greeted with a directory
+selection window issuing you to select the output directory of the source code. This can be the same as the directory
+used when downloading the installer; namely, ``C:\Users\<NAME>\AppData\Local\CeinMS``. This will create a new folder in that directory
+named ceinms-rt in which the source files are stored, we will use this folder during :ref:`compilation <Compile ref>`.
