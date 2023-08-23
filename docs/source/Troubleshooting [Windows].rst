@@ -9,6 +9,8 @@ Downloading files
 
 When encountering isues downloading files from the repository, the following issues might occur: \
 
+.. _TS repo access:
+
 no access to the repository
 +++++++++++++++++++++++++++
 
@@ -23,6 +25,8 @@ Action:\
 Note:\
  Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information. 
  Unauthorized access attempts may be flagged and could lead to account suspension or other penalties.
+
+.. _TS ssh pass:
 
 enter ssh passphrase
 ++++++++++++++++++++
