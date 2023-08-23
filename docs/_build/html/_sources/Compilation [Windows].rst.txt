@@ -33,7 +33,23 @@ during the :ref:`installation <Installation ref>` of the dependencies, Visual St
 and under ``specify the generator for this project`` choose ``Visual Studio 16 2019``. keep the other options default for a normal 64-bit windows installation.
 Press finish to complete
 
+Once Cmake configures the solution, we can find the directory Glew has been installed in. normally, Glew is installed in the ``Program Files (x86)`` folder. \
+
+In the Cmake search bar, search for Glew. six options will arise. the following options will require the corresponding entries: \
+
++---------------------------+-------------------------------------------------------------+
+|Name                       |Value                                                        |
++---------------------------+-------------------------------------------------------------+
+|GLEW_INCLUDE_DIR           | C:/Program Files (x86)/glew-2.1.0/include                   |
++---------------------------+-------------------------------------------------------------+
+|GLEW_SHARED_LIBRARY_RELEASE|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib |
++---------------------------+-------------------------------------------------------------+
+|GLEW_STATIC_LIBRARY_RELEASE|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib|
++---------------------------+-------------------------------------------------------------+
+
 Now press generate and wait for the solution to be generated. \
 
 once the generation is complete, press ``open project`` to open the project in Visual Studio. From here, on the right, there is a file tree with at the top ``ALL_BUILD``.
-Right click this folder and press ``Build``.
+Right click this folder and press ``Build``. This will now build CEINMS. \
+
+If any errors arise during this build, please refer to the :ref:`Troubleshooter <Trouble ref>`.

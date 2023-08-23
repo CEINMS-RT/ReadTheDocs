@@ -35,7 +35,17 @@ Press finish to complete
 
 Once Cmake configures the solution, we can find the directory Glew has been installed in. normally, Glew is installed in the ``Program Files (x86)`` folder. \
 
-In the Cmake search bar, search for Glew. six options will arise, for the ``C:\Program Files (x86)\glew-2.1.0\bin\Release``
+In the Cmake search bar, search for Glew. six options will arise. the following options will require the corresponding entries: \
+
++---------------------------+-------------------------------------------------------------+
+|Name                       |Value                                                        |
++---------------------------+-------------------------------------------------------------+
+|GLEW_INCLUDE_DIR           | C:/Program Files (x86)/glew-2.1.0/include                   |
++---------------------------+-------------------------------------------------------------+
+|GLEW_SHARED_LIBRARY_RELEASE|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib |
++---------------------------+-------------------------------------------------------------+
+|GLEW_STATIC_LIBRARY_RELEASE|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib|
++---------------------------+-------------------------------------------------------------+
 
 Now press generate and wait for the solution to be generated. \
 

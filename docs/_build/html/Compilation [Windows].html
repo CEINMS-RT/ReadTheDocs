@@ -104,9 +104,32 @@ directory <code class="docutils literal notranslate"><span class="pre">C:/Users/
 during the <a class="reference internal" href="Installation [Windows].html#installation-ref"><span class="std std-ref">installation</span></a> of the dependencies, Visual Studio 2019 has been downloaded. click on the <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">button</span></code>
 and under <code class="docutils literal notranslate"><span class="pre">specify</span> <span class="pre">the</span> <span class="pre">generator</span> <span class="pre">for</span> <span class="pre">this</span> <span class="pre">project</span></code> choose <code class="docutils literal notranslate"><span class="pre">Visual</span> <span class="pre">Studio</span> <span class="pre">16</span> <span class="pre">2019</span></code>. keep the other options default for a normal 64-bit windows installation.
 Press finish to complete</p>
+<p>Once Cmake configures the solution, we can find the directory Glew has been installed in. normally, Glew is installed in the <code class="docutils literal notranslate"><span class="pre">Program</span> <span class="pre">Files</span> <span class="pre">(x86)</span></code> folder. </p>
+<p>In the Cmake search bar, search for Glew. six options will arise. the following options will require the corresponding entries: </p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 69%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Name</p></td>
+<td><p>Value</p></td>
+</tr>
+<tr class="row-even"><td><p>GLEW_INCLUDE_DIR</p></td>
+<td><p>C:/Program Files (x86)/glew-2.1.0/include</p></td>
+</tr>
+<tr class="row-odd"><td><p>GLEW_SHARED_LIBRARY_RELEASE</p></td>
+<td><p>C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib</p></td>
+</tr>
+<tr class="row-even"><td><p>GLEW_STATIC_LIBRARY_RELEASE</p></td>
+<td><p>C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib</p></td>
+</tr>
+</tbody>
+</table>
 <p>Now press generate and wait for the solution to be generated. </p>
 <p>once the generation is complete, press <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">project</span></code> to open the project in Visual Studio. From here, on the right, there is a file tree with at the top <code class="docutils literal notranslate"><span class="pre">ALL_BUILD</span></code>.
-Right click this folder and press <code class="docutils literal notranslate"><span class="pre">Build</span></code>.</p>
+Right click this folder and press <code class="docutils literal notranslate"><span class="pre">Build</span></code>. This will now build CEINMS. </p>
+<p>If any errors arise during this build, please refer to the <a class="reference internal" href="Troubleshooting [Windows].html#trouble-ref"><span class="std std-ref">Troubleshooter</span></a>.</p>
 </section>
 </section>
 </section>
