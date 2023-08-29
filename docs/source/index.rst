@@ -19,4 +19,5 @@ Contents
    Installation [Windows]
    Compilation [Windows]
    Execution [Windows]
+   Tutorial [Windows]
    Troubleshooting [Windows]

@@ -4,9 +4,18 @@ Execution [Windows]
 
 .. _exe ref:
 
+Modifiers and definitions
+-------------------------
+
+XML files
++++++++++
+
 Now that CEINMS is installed and compiled, we need to create and define the parameters of the neuromusculoskeletal model.
 three examples are shown in the :ref:`Tutorials <Tutorial ref>`. The definitions of the simulation are defined in two XML files
 that link to 3d models, connections, forces, loads, filters, etc. These XML files are called the subject and the execution file. \
+
+Modifiers
++++++++++
 
 Next to the XML files, there are a few modifiers available to the user, these are compiled in a table below:
 
@@ -63,5 +72,3 @@ Next to the XML files, there are a few modifiers available to the user, these ar
 +---------------+--------------------------------------------------------------+           
 |Displays usage information and exits.                                         |                                      
 +------------------------------------------------------------------------------+
-
-<font color="red">text</font>

@@ -1,5 +1,5 @@
 ======================
-Execution [Windows]
+Tutorial [Windows]
 ======================
 
 .. _Tutorial ref:
