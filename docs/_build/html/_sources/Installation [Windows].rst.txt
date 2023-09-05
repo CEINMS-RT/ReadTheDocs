@@ -23,7 +23,7 @@ This will result in a file path like ``C:/Users/<NAME>/AppData/Local/CeinMS``.
 Now clone the `CEINMS installer <https://bitbucket.org/ctw-bw/ceinms-installer/src/master/>`_ repository 
 by clicking the ``clone`` button and pressing the copy button or copying
 
-.. code-block:: txt
+.. code-block:: bash
 
    git clone git@bitbucket.org:ctw-bw/ceinms-installer.git
 

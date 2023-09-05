@@ -3,4 +3,7 @@
     "restructuredtext.confPath": "${workspaceFolder}\\docs\\source",
     "restructuredtext.syntaxHighlighting.disabled": false,
     "restructuredtext.sphinxBuildPath": "$lbenvPath/bin/sphinx-build",
+    "restructuredtext.preview.sphinx.disabled": true,
+    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source",
+    "esbonio.sphinx.buildDir": "${workspaceRoot}/docs/_build",
 }

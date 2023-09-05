@@ -29,23 +29,23 @@ The build directory can exist in the same folder, but it's recommended to add an
 directory ``C:/Users/<NAME>/AppData/Local/CeinMS/ceinms-rt/build``.
 
 After defining these file paths, it's important to set the configuration of Cmake to create a solution for the right version of visual studio.
-during the :ref:`installation <Installation ref>` of the dependencies, Visual Studio 2019 has been downloaded. click on the ``Configure button``
-and under ``specify the generator for this project`` choose ``Visual Studio 16 2019``. keep the other options default for a normal 64-bit windows installation.
+during the :ref:`installation <Installation ref>` of the dependencies, Visual Studio 2019 has been downloaded. click on the **Configure button**
+and under **specify the generator for this project** choose **Visual Studio 16 2019**. keep the other options default for a normal 64-bit windows installation.
 Press finish to complete
 
 Once Cmake configures the solution, we can find the directory Glew has been installed in. normally, Glew is installed in the ``Program Files (x86)`` folder. \
 
 In the Cmake search bar, search for Glew. six options will arise. the following options will require the corresponding entries: \
 
-+---------------------------+-------------------------------------------------------------+
-|Name                       |Value                                                        |
-+---------------------------+-------------------------------------------------------------+
-|GLEW_INCLUDE_DIR           | C:/Program Files (x86)/glew-2.1.0/include                   |
-+---------------------------+-------------------------------------------------------------+
-|GLEW_SHARED_LIBRARY_RELEASE|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib |
-+---------------------------+-------------------------------------------------------------+
-|GLEW_STATIC_LIBRARY_RELEASE|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib|
-+---------------------------+-------------------------------------------------------------+
++-------------------------------+-------------------------------------------------------------+
+|**Name**                       |Value                                                        |
++-------------------------------+-------------------------------------------------------------+
+|**GLEW_INCLUDE_DIR**           |C:/Program Files (x86)/glew-2.1.0/include                    |
++-------------------------------+-------------------------------------------------------------+
+|**GLEW_SHARED_LIBRARY_RELEASE**|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib |
++-------------------------------+-------------------------------------------------------------+
+|**GLEW_STATIC_LIBRARY_RELEASE**|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib|
++-------------------------------+-------------------------------------------------------------+
 
 Now press generate and wait for the solution to be generated. \
 
