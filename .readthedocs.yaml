@@ -12,6 +12,4 @@ sphinx:
 
 python:
   install:
-    sphinx-copybutton: "0.5.2"
-    sphinx_rtd_theme: "1.2.2"
-    jinja2: "3.0.0"
+    - requirements: docs/requirements.txt
