@@ -152,7 +152,7 @@ xercesc_3_1::DOMDocument& doc (*e.getOwnerDocument ());
 MSVCR120D
 +++++++++
 
-.. image:: images/GLEW.png
+.. image:: images/Ceinmsabort.png
   :width: 400
 
 Follow the instructions here: `CEINMS-70 <https://be.et.utwente.nl/jira/browse/CEINMS-70?src=confmacro>`_ - `Authenticate <https://be.et.utwente.nl/confluence/plugins/servlet/applinks/oauth/login-dance/authorize?applicationLinkID=92039d18-b30d-3b97-be17-a4cb2021224a>`_ to see issue details

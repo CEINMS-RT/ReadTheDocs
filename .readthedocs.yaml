@@ -1,10 +1,7 @@
 version: 2
 build:
+  os: windows-10
   tools:
-    sphinx: "3.1.2"
-    nbsphinx: "0.8.1"
-    sphinx_rtd_theme: "1.2.2"
-    sphinx_copybutton: "0.5.2"
-    jinja2: "3.0.0"
-sphinx:
+    python: "3.11"
+sphinx: "3.1.2"
   configuration: docs/conf.py
