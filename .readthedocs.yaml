@@ -1,8 +1,8 @@
 version: 2
 build:
-  sphinx: "3.1.2"
-  nbsphinx: "0.8.1"
-  pip:
+  tools:
+    sphinx: "3.1.2"
+    nbsphinx: "0.8.1"
     sphinx_rtd_theme: "1.2.2"
     sphinx_copybutton: "0.5.2"
     jinja2: "3.0.0"
