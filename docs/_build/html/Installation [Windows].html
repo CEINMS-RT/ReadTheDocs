@@ -84,42 +84,42 @@
 <h1>Installation [Windows]<a class="headerlink" href="#installation-windows" title="Permalink to this headline">¶</a></h1>
 <section id="downloading-files">
 <span id="download-ref"></span><h2>Downloading files<a class="headerlink" href="#downloading-files" title="Permalink to this headline">¶</a></h2>
-<p class="linemarker linemarker-10">Before we can install CEINMS, we need to get all the required files for installation.
+<p>Before we can install CEINMS, we need to get all the required files for installation.
 These can be found on the Bitbucket repository. In order to download this repository
 without any issues, we will use git to clone the repository onto our local machine.
 make sure there is a recent version of <a class="reference external" href="https://desktop.github.com/">Github desktop</a>
 with <a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash">git bash</a> installed. Now, open
 git bash so we can start the installation. </p>
-<p class="linemarker linemarker-17">move to a local folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
+<p>move to a local folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
 followed by the path specified above and press enter. You may experience git bash telling you there is no such path available. For this error message, the fix might be to change the direction of the slash. This will result in a file path like <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;NAME&gt;/AppData/Local/CeinMS</span></code>.</p>
-<p class="linemarker linemarker-23">Now clone the <a class="reference external" href="https://bitbucket.org/ctw-bw/ceinms-installer/src/master/">CEINMS installer</a> repository
+<p>Now clone the <a class="reference external" href="https://bitbucket.org/ctw-bw/ceinms-installer/src/master/">CEINMS installer</a> repository
 by clicking the <code class="docutils literal notranslate"><span class="pre">clone</span></code> button and pressing the copy button or copying</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@bitbucket.org:ctw-bw/ceinms-installer.git
 </pre></div>
 </div>
-<p class="linemarker linemarker-30">After entering this code, git bash might ask for the passcode to the ssh key connected to Bitbucket,
+<p>After entering this code, git bash might ask for the passcode to the ssh key connected to Bitbucket,
 Simply enter the passcode and the installation will proceed. Now, if we take a look in the folder,
 we find a new folder entry called <code class="docutils literal notranslate"><span class="pre">ceinms-installer</span></code>. inside are all the dependencies required
 and a powershell script called <code class="docutils literal notranslate"><span class="pre">installCEINMS.ps1</span></code>.</p>
 </section>
 <section id="automatic-installation">
 <span id="installation-ref"></span><h2>Automatic installation<a class="headerlink" href="#automatic-installation" title="Permalink to this headline">¶</a></h2>
-<p class="linemarker linemarker-40">Now that everything is download correctly, we can run the powershell script by running powershell in <code class="docutils literal notranslate"><span class="pre">administrator</span></code> mode.
+<p>Now that everything is download correctly, we can run the powershell script by running powershell in <code class="docutils literal notranslate"><span class="pre">administrator</span></code> mode.
 This will open a new powershell terminal. Powershell can run with different clearance depending on the execution policy in place.
 To view the execution policy, run the command</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">Get-ExecutionPolicy</span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-48">in the terminal. Depening on the return, you may need to change your execution policy. To do this, simply run the command</p>
+<p>in the terminal. Depening on the return, you may need to change your execution policy. To do this, simply run the command</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">Get-ExecutionPolicy</span> <span class="n">UnRestricted</span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-54">You might be prompted with a confirmation, to change the policy quickly, simply type <code class="docutils literal notranslate"><span class="pre">A</span></code> followed by <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. Next, move to the local installation folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS\ceinms-installer</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
+<p>You might be prompted with a confirmation, to change the policy quickly, simply type <code class="docutils literal notranslate"><span class="pre">A</span></code> followed by <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. Next, move to the local installation folder like <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;NAME&gt;\AppData\Local\CeinMS\ceinms-installer</span></code> using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command
 followed by the path specified above and press enter. Now, run the following command to start the installation process</p>
 <div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">./</span><span class="n">installCEINMS</span><span class="p">.</span><span class="n">ps1</span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-63">This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
+<p>This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
 during the installation process, frequently encountered error messages and their corresponding fixes are listed
 in the <a class="reference internal" href="Troubleshooting [Windows].html#trouble-ref"><span class="std std-ref">Troubleshooter</span></a>. If the installation goes on without issues, you should be greeted with a directory
 selection window issuing you to select the output directory of the source code. This can be the same as the directory

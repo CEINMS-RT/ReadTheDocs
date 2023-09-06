@@ -88,50 +88,50 @@
 <span id="compile-ref"></span><h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p class="linemarker linemarker-10">Make sure the newest version of CEINMS is installed on your system before proceeding to this section.
+<p>Make sure the newest version of CEINMS is installed on your system before proceeding to this section.
 A guide to installing CEINMS can be found in the <a class="reference internal" href="Installation [Windows].html#download-ref"><span class="std std-ref">Installation section</span></a></p>
 </div>
 <section id="cmake-gui">
 <span id="cmake-ref"></span><h3>CMake-GUI<a class="headerlink" href="#cmake-gui" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-18">During the installation process, CMake-GUI has been installed on your system. We will now use this software to create
+<p>During the installation process, CMake-GUI has been installed on your system. We will now use this software to create
 a Visual Studio solution from which we can build the CEINMS executable. First, search for CMake-GUI by opening the Windows
 search bar. this can be done by pressing the Windows key and typing “cmake”. after finding CMake-GUI, open it. </p>
-<p class="linemarker linemarker-22">You will now be greeted with the GUI of CMake, At the top of the window are two important fields: </p>
-<p class="linemarker linemarker-24"><code class="docutils literal notranslate"><span class="pre">Where</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">source</span> <span class="pre">code</span></code> and <code class="docutils literal notranslate"><span class="pre">Where</span> <span class="pre">to</span> <span class="pre">build</span> <span class="pre">the</span> <span class="pre">binaries</span></code>. </p>
-<p class="linemarker linemarker-26">These fields is where you fill in the CEINMS directories we downloaded earlier. For the example directory
+<p>You will now be greeted with the GUI of CMake, At the top of the window are two important fields: </p>
+<p><code class="docutils literal notranslate"><span class="pre">Where</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">source</span> <span class="pre">code</span></code> and <code class="docutils literal notranslate"><span class="pre">Where</span> <span class="pre">to</span> <span class="pre">build</span> <span class="pre">the</span> <span class="pre">binaries</span></code>. </p>
+<p>These fields is where you fill in the CEINMS directories we downloaded earlier. For the example directory
 <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;NAME&gt;/AppData/Local</span></code>, the source code is stored in the directory <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;NAME&gt;/AppData/Local/CeinMS/ceinms-rt</span></code>.
 The build directory can exist in the same folder, but it’s recommended to add an extra directory layer like /build, which would make the build
 directory <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;NAME&gt;/AppData/Local/CeinMS/ceinms-rt/build</span></code>.</p>
-<p class="linemarker linemarker-31">After defining these file paths, it’s important to set the configuration of Cmake to create a solution for the right version of visual studio.
+<p>After defining these file paths, it’s important to set the configuration of Cmake to create a solution for the right version of visual studio.
 during the <a class="reference internal" href="Installation [Windows].html#installation-ref"><span class="std std-ref">installation</span></a> of the dependencies, Visual Studio 2019 has been downloaded. click on the <strong>Configure button</strong>
 and under <strong>specify the generator for this project</strong> choose <strong>Visual Studio 16 2019</strong>. keep the other options default for a normal 64-bit windows installation.
 Press finish to complete</p>
-<p class="linemarker linemarker-36">Once Cmake configures the solution, we can find the directory Glew has been installed in. normally, Glew is installed in the <code class="docutils literal notranslate"><span class="pre">Program</span> <span class="pre">Files</span> <span class="pre">(x86)</span></code> folder. </p>
-<p class="linemarker linemarker-38">In the Cmake search bar, search for Glew. six options will arise. the following options will require the corresponding entries: </p>
+<p>Once Cmake configures the solution, we can find the directory Glew has been installed in. normally, Glew is installed in the <code class="docutils literal notranslate"><span class="pre">Program</span> <span class="pre">Files</span> <span class="pre">(x86)</span></code> folder. </p>
+<p>In the Cmake search bar, search for Glew. six options will arise. the following options will require the corresponding entries: </p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 34%" />
 <col style="width: 66%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p class="linemarker linemarker-41"><strong>Name</strong></p></td>
-<td><p class="linemarker linemarker-41">Value</p></td>
+<tr class="row-odd"><td><p><strong>Name</strong></p></td>
+<td><p>Value</p></td>
 </tr>
-<tr class="row-even"><td><p class="linemarker linemarker-43"><strong>GLEW_INCLUDE_DIR</strong></p></td>
-<td><p class="linemarker linemarker-43">C:/Program Files (x86)/glew-2.1.0/include</p></td>
+<tr class="row-even"><td><p><strong>GLEW_INCLUDE_DIR</strong></p></td>
+<td><p>C:/Program Files (x86)/glew-2.1.0/include</p></td>
 </tr>
-<tr class="row-odd"><td><p class="linemarker linemarker-45"><strong>GLEW_SHARED_LIBRARY_RELEASE</strong></p></td>
-<td><p class="linemarker linemarker-45">C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib</p></td>
+<tr class="row-odd"><td><p><strong>GLEW_SHARED_LIBRARY_RELEASE</strong></p></td>
+<td><p>C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib</p></td>
 </tr>
-<tr class="row-even"><td><p class="linemarker linemarker-47"><strong>GLEW_STATIC_LIBRARY_RELEASE</strong></p></td>
-<td><p class="linemarker linemarker-47">C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib</p></td>
+<tr class="row-even"><td><p><strong>GLEW_STATIC_LIBRARY_RELEASE</strong></p></td>
+<td><p>C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib</p></td>
 </tr>
 </tbody>
 </table>
-<p class="linemarker linemarker-50">Now press generate and wait for the solution to be generated. </p>
-<p class="linemarker linemarker-52">once the generation is complete, press <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">project</span></code> to open the project in Visual Studio. From here, on the right, there is a file tree with at the top <code class="docutils literal notranslate"><span class="pre">ALL_BUILD</span></code>.
+<p>Now press generate and wait for the solution to be generated. </p>
+<p>once the generation is complete, press <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">project</span></code> to open the project in Visual Studio. From here, on the right, there is a file tree with at the top <code class="docutils literal notranslate"><span class="pre">ALL_BUILD</span></code>.
 Right click this folder and press <code class="docutils literal notranslate"><span class="pre">Build</span></code>. This will now build CEINMS. </p>
-<p class="linemarker linemarker-55">If any errors arise during this build, please refer to the <a class="reference internal" href="Troubleshooting [Windows].html#trouble-ref"><span class="std std-ref">Troubleshooter</span></a>.</p>
+<p>If any errors arise during this build, please refer to the <a class="reference internal" href="Troubleshooting [Windows].html#trouble-ref"><span class="std std-ref">Troubleshooter</span></a>.</p>
 </section>
 </section>
 </section>

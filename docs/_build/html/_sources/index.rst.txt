@@ -15,7 +15,8 @@ Contents
 --------
 
 .. toctree::
-
+   :maxdepth: 2
+   
    Installation [Windows]
    Compilation [Windows]
    Execution [Windows]

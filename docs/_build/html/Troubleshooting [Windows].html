@@ -96,108 +96,101 @@
 <h1>Troubleshooting [Windows]<a class="headerlink" href="#troubleshooting-windows" title="Permalink to this headline">¶</a></h1>
 <section id="contents">
 <span id="trouble-ref"></span><h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
-<p class="linemarker linemarker-10">When encountering isues downloading files from the repository, the following issues might occur: </p>
+<p>When encountering issues with CEINMS, the following solutions might be adequate:</p>
 <section id="no-access-to-the-repository">
 <span id="ts-repo-access"></span><h3>no access to the repository<a class="headerlink" href="#no-access-to-the-repository" title="Permalink to this headline">¶</a></h3>
-<dl class="simple">
-<dt>Solution:</dt><dd><p class="linemarker linemarker-18">Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
+<p>Make sure you have proper clearance to access the repository. If you don’t have the necessary permissions,
 you won’t be able to download files. Check with the repository administrators or owners to ensure that you have the required access rights.</p>
-</dd>
-<dt>Action:</dt><dd><p class="linemarker linemarker-22">If further clearance is needed, you should contact the members of the repository and clarify your intentions for accessing the files.
+<p>If further clearance is needed, you should contact the members of the repository and clarify your intentions for accessing the files.
 Politely request additional clearance if required, explaining the purpose and reasons behind your request.</p>
-</dd>
-<dt>Note:</dt><dd><p class="linemarker linemarker-26">Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information.
+<p>Repositories often have specific access control mechanisms in place to protect sensitive or proprietary information.
 Unauthorized access attempts may be flagged and could lead to account suspension or other penalties.</p>
-</dd>
-</dl>
 </section>
 <section id="enter-ssh-passphrase">
 <span id="ts-ssh-pass"></span><h3>enter ssh passphrase<a class="headerlink" href="#enter-ssh-passphrase" title="Permalink to this headline">¶</a></h3>
-<dl>
-<dt>Solution:</dt><dd><p class="linemarker linemarker-35">If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
+<p>If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
 the password</p>
-</dd>
-<dt>Action:</dt><dd><p class="linemarker linemarker-39">open a command terminal and navigating to <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;UserName&gt;/.ssh</span></code> with the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command. After this, we change the password using the command:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>ssh-keygen -p -f id_rsa
+<p>open a command terminal and navigating to <code class="docutils literal notranslate"><span class="pre">C:/Users/&lt;UserName&gt;/.ssh</span></code> with the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command. After this, we change the password using the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ssh-keygen -p -f id_rsa</span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-45">You will be prompted to enter the old passphrase, after the old passphrase, you will be prompted to enter a new passphrase.
+<p>You will be prompted to enter the old passphrase, after the old passphrase, you will be prompted to enter a new passphrase.
 Repeat this new passphrase once more if you require to do so. Now, the passphrase has been updated.</p>
-</dd>
-<dt>Note:</dt><dd><p class="linemarker linemarker-49">If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.</p>
-</dd>
-</dl>
+<p>If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.</p>
 </section>
 <section id="cannot-find-the-library-in-tdd12-debug-all">
 <span id="ts-tdd12"></span><h3>Cannot find the library in ‘tdd12_debug.all’<a class="headerlink" href="#cannot-find-the-library-in-tdd12-debug-all" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-56">Add the path of the ‘tdd12_debug.dll’ into the environmental variable path.</p>
-<p class="linemarker linemarker-58">For exmaple:  C:UsersWangHDocumentsCEINMS_dependencyoneTBBbuildmsvc_19.16_cxx_64_md_debug</p>
+<p>Add the path of the ‘tdd12_debug.dll’ into the environmental variable path.</p>
+<p>For exmaple:  C:\Users\WangH\Documents\CEINMS_dependency\oneTBB\build\msvc_19.16_cxx_64_md_debug</p>
 </section>
 <section id="cannot-find-the-cmake-files-in-adsclient">
 <span id="ts-cmake-adsclient"></span><h3>Cannot find the cmake files in ‘AdsClient’<a class="headerlink" href="#cannot-find-the-cmake-files-in-adsclient" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-65">Similar to the issue below, this plugin needs to be manually added:</p>
+<p>Similar to the issue below, this plugin needs to be manually added:</p>
 <a class="reference internal image-reference" href="_images/AdsClient.PNG"><img alt="_images/AdsClient.PNG" src="_images/AdsClient.PNG" style="width: 400px;" /></a>
 </section>
 <section id="cannot-find-the-cmake-files-in-tclap-and-qcustomplot">
 <span id="ts-cmake-tclap"></span><h3>Cannot find the cmake files in ‘tclap’ and ‘QCustomPlot’<a class="headerlink" href="#cannot-find-the-cmake-files-in-tclap-and-qcustomplot" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-75">For example:</p>
-<p class="linemarker linemarker-77"><strong>CMake Error at lib/Gui/CMakeLists.txt:3 (add_subdirectory):
+<p>For example:</p>
+<p><strong>CMake Error at lib/Gui/CMakeLists.txt:3 (add_subdirectory):
 The source directory</strong></p>
-<p class="linemarker linemarker-80"><strong>C:/Users/WangH/Documents/cuff_integration/lib/Gui/QCustomPlot</strong></p>
-<p class="linemarker linemarker-82"><strong>does not contain a CMakeLists.txt file.</strong></p>
-<p class="linemarker linemarker-84">Solution: manually download these two dependencies from bitbucket.</p>
-<p class="linemarker linemarker-86">In source_tree, there is an option called ‘SUBMODULES’, you need to double click these two modules to download their source code:</p>
+<p><strong>C:/Users/WangH/Documents/cuff_integration/lib/Gui/QCustomPlot</strong></p>
+<p><strong>does not contain a CMakeLists.txt file.</strong></p>
+<p>Solution: manually download these two dependencies from bitbucket.</p>
+<p>In source_tree, there is an option called ‘SUBMODULES’, you need to double click these two modules to download their source code:</p>
 <a class="reference internal image-reference" href="_images/tclaperror.PNG"><img alt="_images/tclaperror.PNG" src="_images/tclaperror.PNG" style="width: 400px;" /></a>
 </section>
 <section id="cannot-open-file-glew-2-1-0-lib-release-x64-obj">
 <span id="ts-glew-obj"></span><h3>Cannot open file ‘glew-2.1.0/lib/Release/x64.obj’<a class="headerlink" href="#cannot-open-file-glew-2-1-0-lib-release-x64-obj" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-96">The ‘glew32.lib’ and ‘glew32s.lib’ need to be set in the CMake path, as shown below:</p>
+<p>The ‘glew32.lib’ and ‘glew32s.lib’ need to be set in the CMake path, as shown below:</p>
 <a class="reference internal image-reference" href="_images/GLEW.png"><img alt="_images/GLEW.png" src="_images/GLEW.png" style="width: 400px;" /></a>
 </section>
 <section id="cannot-find-the-glew32-lib-or-dll">
 <span id="ts-glew-lib"></span><h3>Cannot find the ‘glew32.lib’ or .dll<a class="headerlink" href="#cannot-find-the-glew32-lib-or-dll" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-106">Add variables CMAKE_PREFIX_PATH in the CMAKE gui specifying the path to the glew folder.</p>
-<p class="linemarker linemarker-108">If you still have problems add also the variable GLEW_HOME_DLL and fill it with the path to the .dll file.</p>
+<p>Add variables CMAKE_PREFIX_PATH in the CMAKE gui specifying the path to the glew folder.</p>
+<p>If you still have problems add also the variable GLEW_HOME_DLL and fill it with the path to the .dll file.</p>
 </section>
 <section id="cannot-find-opensim">
 <span id="ts-find-opensim"></span><h3>Cannot find OpenSim<a class="headerlink" href="#cannot-find-opensim" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-115">If using the command line:</p>
-<p class="linemarker linemarker-117">-CMAKE_PREFIX_PATH=”C:pathtoopensimcmake”</p>
-<p class="linemarker linemarker-119">in the GUI see the picture:</p>
+<p>If using the command line:</p>
+<p>-CMAKE_PREFIX_PATH=”C:\pathto\opensim\cmake”</p>
+<p>in the GUI see the picture:</p>
 </section>
 <section id="opensim-4-3">
 <span id="ts-opensim"></span><h3>Opensim 4.3<a class="headerlink" href="#opensim-4-3" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-126">Add:</p>
-<p class="linemarker linemarker-128"><strong>include_directories(${OPENSIM_ROOT_DIR}/sdk/spdlog/include)</strong></p>
-<p class="linemarker linemarker-130">After:</p>
-<p class="linemarker linemarker-132"><strong>find_package(OpenSim REQUIRED)</strong></p>
+<dl class="simple">
+<dt>Add:</dt><dd><p><strong>include_directories(${OPENSIM_ROOT_DIR}/sdk/spdlog/include)</strong></p>
+</dd>
+<dt>After:</dt><dd><p><strong>find_package(OpenSim REQUIRED)</strong></p>
+</dd>
+</dl>
 </section>
 <section id="xsd">
 <h3>XSD<a class="headerlink" href="#xsd" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-137"><strong>Compilation</strong></p>
-<p class="linemarker linemarker-139">error C2872: ‘DOMDocument’ : ambiguous symbol
-:in the file:</p>
-<p class="linemarker linemarker-142">C:Program Files (x86)CodeSynthesis XSD 4.0includexsdcxxtreeserialization.txx</p>
-<p class="linemarker linemarker-144">In line 104, change:</p>
-<p class="linemarker linemarker-146">DOMDocument&amp; doc (<a href="#id1"><span class="problematic" id="id2">*</span></a>e.getOwnerDocument ());</p>
-<p class="linemarker linemarker-148">by:</p>
-<p class="linemarker linemarker-150">xercesc_3_1::DOMDocument&amp; doc (<a href="#id3"><span class="problematic" id="id4">*</span></a>e.getOwnerDocument ());</p>
+<p><strong>Compilation</strong></p>
+<p>error C2872: ‘DOMDocument’ : ambiguous symbol : in the file:</p>
+<p>C:\Program Files (x86)\CodeSynthesis XSD 4.0\include\xsd\cxx\tree\serialization.txx</p>
+<dl class="simple">
+<dt>In line 104, change:</dt><dd><p>DOMDocument&amp; doc (<a href="#id1"><span class="problematic" id="id2">*</span></a>e.getOwnerDocument ());</p>
+</dd>
+<dt>by:</dt><dd><p>xercesc_3_1::DOMDocument&amp; doc (<a href="#id3"><span class="problematic" id="id4">*</span></a>e.getOwnerDocument ());</p>
+</dd>
+</dl>
 </section>
 <section id="msvcr120d">
 <h3>MSVCR120D<a class="headerlink" href="#msvcr120d" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="_images/Ceinmsabort.png"><img alt="_images/Ceinmsabort.png" src="_images/Ceinmsabort.png" style="width: 400px;" /></a>
-<p class="linemarker linemarker-158">Follow the instructions here: <a class="reference external" href="https://be.et.utwente.nl/jira/browse/CEINMS-70?src=confmacro">CEINMS-70</a> - <a class="reference external" href="https://be.et.utwente.nl/confluence/plugins/servlet/applinks/oauth/login-dance/authorize?applicationLinkID=92039d18-b30d-3b97-be17-a4cb2021224a">Authenticate</a> to see issue details
+<p>Follow the instructions here: <a class="reference external" href="https://be.et.utwente.nl/jira/browse/CEINMS-70?src=confmacro">CEINMS-70</a> - <a class="reference external" href="https://be.et.utwente.nl/confluence/plugins/servlet/applinks/oauth/login-dance/authorize?applicationLinkID=92039d18-b30d-3b97-be17-a4cb2021224a">Authenticate</a> to see issue details
 So just download the zip file and copy msvcr120d.dll into <code class="docutils literal notranslate"><span class="pre">C:\Windows\System32</span></code>. Then, run the command line:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\W</span>indows<span class="se">\S</span>ystem32&gt;<span class="w"> </span>certutil<span class="w"> </span>-hashfile<span class="w"> </span>.<span class="se">\m</span>svcr120d.dll
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Windows\System32&gt; certutil -hashfile .\msvcr120d.dll</span>
 </pre></div>
 </div>
 </section>
 <section id="cmake-error-at-plugin-cmakelists-txt">
 <h3>CMake Error at plugin/CMakeLists.txt<a class="headerlink" href="#cmake-error-at-plugin-cmakelists-txt" title="Permalink to this headline">¶</a></h3>
-<p class="linemarker linemarker-168">The source directory
+<p>The source directory
 C:/…………./plugin/lib/AdsClient
 does not contain a CMakeLists.txt file</p>
-<p class="linemarker linemarker-172">Type in the terminal: git submodule update –init</p>
+<p>Type in the terminal: git submodule update –init</p>
 </section>
 </section>
 </section>
