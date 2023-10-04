@@ -45,7 +45,7 @@ To view the execution policy, run the command
 
    Get-ExecutionPolicy
 
-in the terminal. Depening on the return, you may need to change your execution policy. To do this, simply run the command
+In the terminal. Depening on the return, you may need to change your execution policy. To do this, simply run the command
 
 .. code-block:: powershell
 
