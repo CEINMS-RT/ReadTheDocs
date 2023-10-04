@@ -22,3 +22,4 @@ Contents
    Execution [Windows]
    Tutorial [Windows]
    Troubleshooting [Windows]
+   Installation [Ubuntu]
