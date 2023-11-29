@@ -1,5 +1,67 @@
-======================
-Tutorial [Windows]
-======================
+==========================
+Tutorial [Windows][Ubuntu]
+==========================
 
 .. _Tutorial ref:
+
+LowerLimbModel
+--------------
+
+Installation
+++++++++++++
+
+Installation of the ``LowerLimbModel`` is simple, 
+go to the respective github repository and download the LowerLimbModel folder as zip or use git checkout on the LowerLimbModel page to download the files on your local machine. 
+Next, make sure :ref:`CEINMS is completely installed <Download ref>` and the cfg folder is in place. 
+Once this is ready we can copy the LowerLimbModel folder into the cfg folder. 
+This LowerLimbModel folder should another folder called SplineCoeff which contains .bin files.
+Move the SplineCoeff folder up one in the filetree so it's in the root of the cfg folder.
+
+Usage
++++++
+
+Using the LowerLimbModel is just like launching CEINMS normally, we only need to specify the right execution and subject xml in the run prompt and run the program.
+for the LowerLimbModel, we use the executionRT.xml file and the subjectMTU.xml file. This will result in the following run command:
+
+.. code-block:: console
+
+    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\subjectMTU.xml -g
+
+What you will see is a skeleton on the right side of the screen and the emg data on the left.
+
+BackModel
+---------
+
+Installation
+++++++++++++
+
+Installation of the ``BackModel`` is simple, 
+go to the respective github repository and download the BackModel folder as zip or use git checkout on the BackModel page to download the files on your local machine. 
+Next, make sure :ref:`CEINMS is completely installed <Download ref>` and the cfg folder is in place. 
+Once this is ready we can copy the LowerLimbModel folder into the cfg folder. 
+This LowerLimbModel folder should another folder called SplineCoeff which contains .bin files.
+Move the SplineCoeff folder up one in the filetree so it's in the root of the cfg folder.
+
+Usage
++++++
+
+Using the LowerLimbModel is just like launching CEINMS normally, we only need to specify the right execution and subject xml in the run prompt and run the program.
+for the LowerLimbModel, we use the executionRT.xml file and the subjectMTU.xml file. This will result in the following run command:
+
+.. code-block:: console
+
+    .\bin\Win\Debug\CEINMS.exe -e ".\cfg\BackModel\Configuration files\executionRT.xml" -s ".\cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -g
+
+What you will see is a skeleton on the right side of the screen and the emg data on the left.
+
+UpperLimbModel
+--------------
+
+Installation
+++++++++++++
+
+
+
+Usage
++++++
+

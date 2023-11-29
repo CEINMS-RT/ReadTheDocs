@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Execution [Windows] &mdash; CEINMS 0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Execution [Windows] &mdash; CEINMS 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tutorial [Windows]" href="Tutorial [Windows].html" />
-    <link rel="prev" title="Compilation [Windows]" href="Compilation [Windows].html" /> 
+    <link rel="next" title="Tutorial [Windows][Ubuntu]" href="Tutorial%20%5BWindows%5D%5BUbuntu%5D.html" />
+    <link rel="prev" title="Compilation [Windows]" href="Compilation%20%5BWindows%5D.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,8 +47,8 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Installation [Windows].html">Installation [Windows]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Compilation [Windows].html">Compilation [Windows]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation%20%5BWindows%5D.html">Installation [Windows]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Compilation%20%5BWindows%5D.html">Compilation [Windows]</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Execution [Windows]</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#modifiers-and-definitions">Modifiers and definitions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#xml-files">XML files</a></li>
@@ -55,8 +57,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorial [Windows].html">Tutorial [Windows]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Troubleshooting [Windows].html">Troubleshooting [Windows]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial%20%5BWindows%5D%5BUbuntu%5D.html">Tutorial [Windows][Ubuntu]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Troubleshooting%20%5BWindows%5D.html">Troubleshooting [Windows]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation%20%5BUbuntu%5D.html">Installation [Ubuntu]</a></li>
 </ul>
 
         </div>
@@ -84,86 +87,82 @@
            <div itemprop="articleBody">
              
   <section id="execution-windows">
-<h1>Execution [Windows]<a class="headerlink" href="#execution-windows" title="Permalink to this headline">¶</a></h1>
+<h1>Execution [Windows]<a class="headerlink" href="#execution-windows" title="Permalink to this heading"></a></h1>
 <section id="modifiers-and-definitions">
-<span id="exe-ref"></span><h2>Modifiers and definitions<a class="headerlink" href="#modifiers-and-definitions" title="Permalink to this headline">¶</a></h2>
+<span id="exe-ref"></span><h2>Modifiers and definitions<a class="headerlink" href="#modifiers-and-definitions" title="Permalink to this heading"></a></h2>
 <section id="xml-files">
-<h3>XML files<a class="headerlink" href="#xml-files" title="Permalink to this headline">¶</a></h3>
-<p>Now that CEINMS is installed and compiled, we need to create and define the parameters of the neuromusculoskeletal model.
-three examples are shown in the <a class="reference internal" href="Tutorial [Windows].html#tutorial-ref"><span class="std std-ref">Tutorials</span></a>. The definitions of the simulation are defined in two <strong>XML</strong> files
+<h3>XML files<a class="headerlink" href="#xml-files" title="Permalink to this heading"></a></h3>
+<p class="linemarker linemarker-13">Now that CEINMS is installed and compiled, we need to create and define the parameters of the neuromusculoskeletal model.
+Three examples are shown in the <a class="reference internal" href="Tutorial%20%5BWindows%5D%5BUbuntu%5D.html#tutorial-ref"><span class="std std-ref">Tutorials</span></a>. The definitions of the simulation are defined in two <strong>XML</strong> files
 that link to 3d models, connections, forces, loads, filters, etc. These <strong>XML</strong> files are called the subject and the execution file. </p>
 </section>
 <section id="modifiers">
-<h3>Modifiers<a class="headerlink" href="#modifiers" title="Permalink to this headline">¶</a></h3>
-<p>Next to the XML files, there are a few modifiers available to the user, these are compiled in a table below:</p>
+<h3>Modifiers<a class="headerlink" href="#modifiers" title="Permalink to this heading"></a></h3>
+<p class="linemarker linemarker-20">Next to the XML files, there are a few modifiers available to the user, these are compiled in a table below:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 81%" />
-</colgroup>
 <thead>
-<tr class="row-odd"><th class="head" colspan="2"><p>C:\&lt;PathToCeims-rt&gt;\bin\Win\Debug\CEINMS.exe
+<tr class="row-odd"><th class="head" colspan="2"><p class="linemarker linemarker-23">C:\&lt;PathToCeims-rt&gt;\bin\Win\Debug\CEINMS.exe
 [-g] [-p &lt;string&gt;] [-r &lt;string&gt;]
 [-v &lt;int&gt;] -e &lt;string&gt; -s &lt;string&gt;
 [–] [–version] [-h]</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td colspan="2"><p>Where:</p></td>
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-28">Where:</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-g</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--gui</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-30"><code class="docutils literal notranslate"><span class="pre">-g</span></code></p></td>
+<td><p class="linemarker linemarker-30"><code class="docutils literal notranslate"><span class="pre">--gui</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Use the graphical interface</p></td>
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-32">Use the graphical interface</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">&lt;string&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--process</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-34"><code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<td><p class="linemarker linemarker-34"><code class="docutils literal notranslate"><span class="pre">--process</span> <span class="pre">&lt;string&gt;</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Process the emgFilt.txt and ik.sto found in arg (string) directory in
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-36">Process the emgFilt.txt and ik.sto found in arg (string) directory in
 a offline ways. This option overrule the execution.xml.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-r</span> <span class="pre">&lt;string&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--record</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-39"><code class="docutils literal notranslate"><span class="pre">-r</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<td><p class="linemarker linemarker-39"><code class="docutils literal notranslate"><span class="pre">--record</span> <span class="pre">&lt;string&gt;</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Save the output in a directory. The name of the directory is arg
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-41">Save the output in a directory. The name of the directory is arg
 (string).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">&lt;int&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--verbose</span> <span class="pre">&lt;int&gt;</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-44"><code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">&lt;int&gt;</span></code></p></td>
+<td><p class="linemarker linemarker-44"><code class="docutils literal notranslate"><span class="pre">--verbose</span> <span class="pre">&lt;int&gt;</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Verbose option. arg (int) is the level of verbose output (0 no output,
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-46">Verbose option. arg (int) is the level of verbose output (0 no output,
 1 basic output, 2 debug information and 3 in-loop debug).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-e</span> <span class="pre">&lt;string&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--execution</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-49"><code class="docutils literal notranslate"><span class="pre">-e</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<td><p class="linemarker linemarker-49"><code class="docutils literal notranslate"><span class="pre">--execution</span> <span class="pre">&lt;string&gt;</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>(required) Execution xml file option. See execution.xsd in XSD
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-51">(required) Execution xml file option. See execution.xsd in XSD
 directory for more information.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">&lt;string&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--subject</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-54"><code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">&lt;string&gt;</span></code></p></td>
+<td><p class="linemarker linemarker-54"><code class="docutils literal notranslate"><span class="pre">--subject</span> <span class="pre">&lt;string&gt;</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>(required) Subject specific for CEINMS xml file. See subject.xsd in
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-56">(required) Subject specific for CEINMS xml file. See subject.xsd in
 XSD directory for more information.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">&lt;double&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--timer</span> <span class="pre">&lt;double&gt;</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-59"><code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">&lt;double&gt;</span></code></p></td>
+<td><p class="linemarker linemarker-59"><code class="docutils literal notranslate"><span class="pre">--timer</span> <span class="pre">&lt;double&gt;</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>(optional) Kill CEINMS &amp; GUI after a given time (in seconds).</p></td>
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-61">(optional) Kill CEINMS &amp; GUI after a given time (in seconds).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--ignore_rest</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-63"><code class="docutils literal notranslate"><span class="pre">--</span></code></p></td>
+<td><p class="linemarker linemarker-63"><code class="docutils literal notranslate"><span class="pre">--ignore_rest</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Ignores the rest of the labeled arguments following this flag.</p></td>
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-65">Ignores the rest of the labeled arguments following this flag.</p></td>
 </tr>
-<tr class="row-odd"><td colspan="2"><p><code class="docutils literal notranslate"><span class="pre">--version</span></code></p></td>
+<tr class="row-odd"><td colspan="2"><p class="linemarker linemarker-67"><code class="docutils literal notranslate"><span class="pre">--version</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Displays version information and exits.</p></td>
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-69">Displays version information and exits.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-h</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
+<tr class="row-odd"><td><p class="linemarker linemarker-71"><code class="docutils literal notranslate"><span class="pre">-h</span></code></p></td>
+<td><p class="linemarker linemarker-71"><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>Displays usage information and exits.</p></td>
+<tr class="row-even"><td colspan="2"><p class="linemarker linemarker-73">Displays usage information and exits.</p></td>
 </tr>
 </tbody>
 </table>
@@ -175,8 +174,8 @@ XSD directory for more information.</p></td>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Compilation [Windows].html" class="btn btn-neutral float-left" title="Compilation [Windows]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Tutorial [Windows].html" class="btn btn-neutral float-right" title="Tutorial [Windows]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Compilation%20%5BWindows%5D.html" class="btn btn-neutral float-left" title="Compilation [Windows]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Tutorial%20%5BWindows%5D%5BUbuntu%5D.html" class="btn btn-neutral float-right" title="Tutorial [Windows][Ubuntu]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
