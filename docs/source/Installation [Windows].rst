@@ -8,7 +8,7 @@ Downloading files
 +++++++++++++++++
 
 Before we can install CEINMS, we need to get all the required files for installation.
-These can be found on the Bitbucket repository. In order to download this repository
+These can be found on GitHub. In order to download this repository
 without any issues, we will use git to clone the repository onto our local machine.
 Make sure there is a recent version of `Github desktop <https://desktop.github.com/>`_
 with `git bash <https://www.atlassian.com/git/tutorials/git-bash>`_ installed. Now, open
@@ -20,14 +20,14 @@ You may experience git bash telling you there is no such path available. \
 For this error message, the fix might be to change the direction of the slash. \
 This will result in a file path like ``C:/Users/<NAME>/AppData/Local/CeinMS``.
 
-Now clone the `CEINMS installer <https://bitbucket.org/ctw-bw/ceinms-installer/src/master/>`_ repository 
+Now clone the `CEINMS installer <https://github.com/CEINMS-RT/CEINMS-RT_Installer>`_ repository 
 by clicking the ``clone`` button and pressing the copy button or copying
 
 .. code-block:: bash
 
-   git clone git@bitbucket.org:ctw-bw/ceinms-installer.git
+   git clone git@github.com:CEINMS-RT/CEINMS-RT_Installer.git
 
-After entering this code, git bash might ask for the passcode to the ssh key connected to Bitbucket,
+After entering this code, git bash might ask for the passcode to the SSH key connected to GitHub,
 Simply enter the passcode and the installation will proceed. Now, if we take a look in the folder,
 we find a new folder entry called ``ceinms-installer``. Inside are all the dependencies required
 and a powershell script called ``installCEINMS.ps1``.
