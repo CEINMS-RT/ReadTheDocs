@@ -8,7 +8,7 @@ Setup
 -----
 
 .. important:: Make sure the newest version of CEINMS is installed on your system before proceeding to this section.
-    A guide to installing CEINMS can be found in the :ref:`Installation section <Download ref>`
+    A guide to installing CEINMS can be found in the :ref:`Installation section <Download ref>`.
 
 .. _CMake ref:
 
@@ -28,14 +28,14 @@ These fields is where you fill in the CEINMS directories we downloaded earlier. 
 The build directory can exist in the same folder, but it's recommended to add an extra directory layer like /build, which would make the build
 directory ``C:/Users/<NAME>/AppData/Local/CeinMS/ceinms-rt/build``.
 
-After defining these file paths, it's important to set the configuration of Cmake to create a solution for the right version of visual studio.
+After defining these file paths, it's important to set the configuration of CMake to create a solution for the right version of Visual Studio.
 During the :ref:`installation <Installation ref>` of the dependencies, Visual Studio 2019 has been downloaded. Click on the **Configure button**
 and under **specify the generator for this project** choose **Visual Studio 16 2019**. Keep the other options default for a normal 64-bit windows installation.
 Press finish to complete
 
-Once Cmake configures the solution, we can find the directory Glew has been installed in. Normally, Glew is installed in the ``Program Files (x86)`` folder. \
+Once CMake configures the solution, we can find the directory Glew has been installed in. Normally, Glew is installed in the ``Program Files (x86)`` folder. \
 
-In the Cmake search bar, search for Glew. six options will arise. The following options will require the corresponding entries: \
+In the CMake search bar, search for Glew. six options will arise. The following options will require the corresponding entries: \
 
 +-------------------------------+-------------------------------------------------------------+
 |**Name**                       |Value                                                        |
