@@ -7,6 +7,8 @@ Installation [Windows]
 Downloading files
 +++++++++++++++++
 
+Up to date `readme <https://github.com/CEINMS-RT/CEINMS-RT_Installer/blob/master/README.md>`_ xcxxcxcxc. 
+
 Before we can install CEINMS, we need to get all the required files for installation.
 These can be found on GitHub. In order to download this repository
 without any issues, we will use Git to clone the repository onto our local machine.
@@ -30,15 +32,15 @@ by clicking the ``clone`` button and pressing the copy button or copying
 After entering this code, Git Bash might ask for the passcode to the SSH key connected to GitHub,
 Simply enter the passcode and the installation will proceed. Now, if we take a look in the folder,
 we find a new folder entry called ``ceinms-installer``. Inside are all the dependencies required
-and a powershell script called ``installCEINMS.ps1``.
+and a PowerShell script called ``installCEINMS.ps1``.
 
 .. _Installation ref:
 
 Automatic installation
 ++++++++++++++++++++++
 
-Now that everything is download correctly, we can run the powershell script by running powershell in ``administrator`` mode.
-This will open a new powershell terminal. Powershell can run with different clearance depending on the execution policy in place.
+Now that everything is download correctly, we can run the PowerShell script by running PowerShell in ``administrator`` mode.
+This will open a new PowerShell terminal. PowerShell can run with different clearance depending on the execution policy in place.
 To view the execution policy, run the command
 
 .. code-block:: powershell
@@ -60,9 +62,9 @@ Now, run the following command to start the installation process
 
    ./installCEINMS.ps1
 
-This will activate the powershell script and start installing CEINMS. You can keep track of any errors that may occur
+This will activate the PowerShell script and start installing CEINMS. You can keep track of any errors that may occur
 during the installation process, frequently encountered error messages and their corresponding fixes are listed
 in the :ref:`Troubleshooter <Trouble ref>`. If the installation goes on without issues, you should be greeted with a directory
 selection window issuing you to select the output directory of the source code. This can be the same as the directory
 used when downloading the installer; namely, ``C:\Users\<NAME>\AppData\Local\CeinMS``. This will create a new folder in that directory
-named ceinms-rt in which the source files are stored, we will use this folder during :ref:`compilation <Compile ref>`.
+named ``ceinms-rt`` in which the source files are stored, we will use this folder during :ref:`compilation <Compile ref>`.
