@@ -36,4 +36,4 @@ For compiling `Opensim <https://github.com/opensim-org/opensim-core/tree/4.3>`_ 
 
 Follow this step: https://github.com/opensim-org/opensim-core#on-ubuntu-using-unix-makefiles
 
-For compilation of Dependencies select: docopt, simbody and spdlog and put the CMAKE_BUILD_TYPE in Debug for easier debugging later.
+For compilation of Dependencies select: ``docopt``, ``simbody`` and ``spdlog`` and set CMAKE_BUILD_TYPE to ``Debug`` for easier debugging later.
