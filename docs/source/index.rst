@@ -23,3 +23,5 @@ Contents
    Tutorial [Windows][Ubuntu]
    Troubleshooting [Windows]
    Installation [Ubuntu]
+   Repositories
+   
