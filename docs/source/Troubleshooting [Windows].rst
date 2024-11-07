@@ -11,7 +11,7 @@ When encountering issues with CEINMS, the following solutions might be adequate:
 
 .. _TS repo access:
 
-no access to the repository
+No access to the repository
 +++++++++++++++++++++++++++
 
 Make sure you have proper clearance to access the repository. If you don't have the necessary permissions,
@@ -25,20 +25,18 @@ Unauthorized access attempts may be flagged and could lead to account suspension
 
 .. _TS ssh pass:
 
-enter ssh passphrase
+Enter SSH passphrase
 ++++++++++++++++++++
 
-If a password for the rsa ssh-key is already in place, try filling in the password. If the password does not get you through, you can change
-the password
-
-open a command terminal and navigating to ``C:/Users/<UserName>/.ssh`` with the ``cd`` command. After this, we change the password using the command:
+If a password for the rsa SSH key is already in place, try filling in the password. If the password does not get you through, you can change
+the password. Open a command terminal and navigating to ``C:/Users/<UserName>/.ssh`` with the ``cd`` command. After this, we change the password using the command:
 
 .. code-block:: console
 
     ssh-keygen -p -f id_rsa
 
-You will be prompted to enter the old passphrase, after the old passphrase, you will be prompted to enter a new passphrase.
-Repeat this new passphrase once more if you require to do so. Now, the passphrase has been updated.
+You will be prompted to enter the old passphrase. After the old passphrase, you will be prompted to enter a new passphrase.
+Repeat this new passphrase once more if you are required to do so. Now, the passphrase has been updated.
 
 If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.
 
