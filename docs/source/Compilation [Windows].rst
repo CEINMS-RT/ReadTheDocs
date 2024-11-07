@@ -21,6 +21,9 @@ search bar. This can be done by pressing the Windows key and typing "cmake". Aft
 
 You will now be greeted with the GUI of CMake, At the top of the window are two important fields: \
 
+.. image:: images/ceinms-cmake-1.png
+  :width: 400
+
 ``Where is the source code`` and ``Where to build the binaries``. \
 
 These fields is where you fill in the CEINMS directories we downloaded earlier. For the example directory
