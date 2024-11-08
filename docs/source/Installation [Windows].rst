@@ -56,4 +56,4 @@ If the installation goes on without issues, you should be greeted with a directo
 selection window issuing you to select the output directory of the source code.
 The installation script will create a new folder in the designated directory
 named ``ceinms-rt`` in which the source files are stored.
-We will use this folder in :ref:`Compilation <Compile ref>` section.
+We will use this folder in the :ref:`Compilation <Compile ref>` section.
