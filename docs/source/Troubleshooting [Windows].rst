@@ -124,17 +124,22 @@ After:
 XSD
 +++
 
-**Compilation**
+In case of compilation error "C2872: 'DOMDocument' : ambiguous symbol", in the file
+'C:\\Program Files (x86)\\CodeSynthesis XSD 4.0\\include\\xsd\\cxx\\tree\\serialization.txx' change:
 
-error C2872: 'DOMDocument' : ambiguous symbol : in the file:
+.. code-block:: cpp
+  :linenos:
+  :lineno-start: 104
 
-C:\\Program Files (x86)\\CodeSynthesis XSD 4.0\\include\\xsd\\cxx\\tree\\serialization.txx
+  DOMDocument& doc (*e.getOwnerDocument ());
 
-In line 104, change:
- DOMDocument& doc (*e.getOwnerDocument ());
+into:
 
-by:
- xercesc_3_1::DOMDocument& doc (*e.getOwnerDocument ());
+.. code-block:: cpp
+  :linenos:
+  :lineno-start: 104
+
+  xercesc_3_1::DOMDocument& doc (*e.getOwnerDocument ());
 
 CMake Error at plugin/CMakeLists.txt
 ++++++++++++++++++++++++++++++++++++
@@ -143,4 +148,10 @@ The source directory
 C:/............./plugin/lib/AdsClient
 does not contain a CMakeLists.txt file
 
-Type in the terminal: git submodule update --init
+Type in the terminal:
+
+.. code-block:: console
+   :caption: this.py
+   :name: this-py
+
+   git submodule update --init
