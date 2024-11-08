@@ -40,36 +40,17 @@ Repeat this new passphrase once more if you are required to do so. Now, the pass
 
 If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.
 
-.. _TS cmake AdsClient:
+.. _TS CMakeLists.txt:
 
-Cannot find the cmake files in 'AdsClient'
-++++++++++++++++++++++++++++++++++++++++++
+Cannot find 'CMakeLists.txt'
+++++++++++++++++++++++++++++
 
-Similar to the issue below, this plugin needs to be manually added:
+In case of the CMake error "(add_subdirectory): The source directory (lib/\* | plugin/\*) does not contain a CMakeLists.txt file", 
+type in the terminal:
 
-.. image:: images/AdsClient.PNG
-  :width: 400
+.. code-block:: console
 
-.. _TS cmake tclap:
-
-Cannot find the cmake files in 'tclap' and 'QCustomPlot'
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-For example:
-
-**CMake Error at lib/Gui/CMakeLists.txt:3 (add_subdirectory):
-The source directory**
-
-**C:/Users/WangH/Documents/cuff_integration/lib/Gui/QCustomPlot**
-
-**does not contain a CMakeLists.txt file.**
-
-Solution: manually download these two dependencies from bitbucket.
-
-In source_tree, there is an option called 'SUBMODULES', you need to double click these two modules to download their source code:
-
-.. image:: images/tclaperror.PNG
-  :width: 400
+   git submodule update --init
 
 .. _TS glew obj:
 
@@ -86,31 +67,8 @@ The 'glew32.lib' and 'glew32s.lib' need to be set in the CMake path, as shown be
 Cannot find the 'glew32.lib' or .dll
 ++++++++++++++++++++++++++++++++++++
 
-Add variables CMAKE_PREFIX_PATH in the CMAKE gui specifying the path to the glew folder. 
-
-If you still have problems add also the variable GLEW_HOME_DLL and fill it with the path to the .dll file. 
-
-.. _TS find Opensim:
-
-Cannot find OpenSim
-+++++++++++++++++++
-
-If using the command line:
-
--CMAKE_PREFIX_PATH="C:\\pathto\\opensim\\cmake"
-
-in the GUI see the picture:
-
-.. _TS Opensim:
-
-Opensim 4.3
-+++++++++++
-
-Add:
- **include_directories(${OPENSIM_ROOT_DIR}/sdk/spdlog/include)**
-
-After:
- **find_package(OpenSim REQUIRED)**
+Add or modify variable ``CMAKE_PREFIX_PATH`` in the CMAKE GUI to include the path to the Glew folder.
+If you still have problems also the variable ``GLEW_HOME_DLL`` and fill it with the path to the .dll file.
 
 XSD
 +++
@@ -131,18 +89,3 @@ into:
   :lineno-start: 104
 
   xercesc_3_1::DOMDocument& doc (*e.getOwnerDocument ());
-
-CMake Error at plugin/CMakeLists.txt
-++++++++++++++++++++++++++++++++++++
-
-The source directory
-C:/............./plugin/lib/AdsClient
-does not contain a CMakeLists.txt file
-
-Type in the terminal:
-
-.. code-block:: console
-   :caption: this.py
-   :name: this-py
-
-   git submodule update --init
