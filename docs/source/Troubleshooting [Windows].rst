@@ -40,15 +40,6 @@ Repeat this new passphrase once more if you are required to do so. Now, the pass
 
 If the old password is unknown, there is no way to change or retieve this password. A new key must be requested or made.
 
-.. _TS tdd12:
-
-Cannot find the library in 'tdd12_debug.all'
-++++++++++++++++++++++++++++++++++++++++++++
-
-Add the path of the 'tdd12_debug.dll' into the environmental variable path.
-
-For exmaple:  C:\\Users\\WangH\\Documents\\CEINMS_dependency\\oneTBB\\build\\msvc_19.16_cxx_64_md_debug
-
 .. _TS cmake AdsClient:
 
 Cannot find the cmake files in 'AdsClient'
