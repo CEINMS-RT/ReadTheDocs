@@ -20,8 +20,7 @@ Contents
    Installation [Windows]
    Compilation [Windows]
    Execution [Windows]
-   Tutorial [Windows][Ubuntu]
+   Tutorial [Windows]
    Troubleshooting [Windows]
-   Installation [Ubuntu]
    Repositories
    
