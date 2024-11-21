@@ -1,6 +1,6 @@
-=========================
-Troubleshooting [Windows]
-=========================
+===============
+Troubleshooting
+===============
 
 .. _Trouble ref:
 

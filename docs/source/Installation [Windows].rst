@@ -1,6 +1,6 @@
-======================
-Installation [Windows]
-======================
+============
+Installation
+============
 
 .. _Download ref:
 

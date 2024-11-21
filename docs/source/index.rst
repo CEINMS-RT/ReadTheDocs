@@ -1,26 +1,24 @@
-======================================
-Welcome to the documentation of CEINMS
-======================================
+=======
+Welcome
+=======
 
-Welcome to CEINMS. The software for neuromusculoskeletal modeling.
-CEINMS has moved to opensource development so that the community can grow and improve.
-In this documentation we will guide you through the installation process,
-debugging of your installation, tutorials and available plugins.
+Welcome to CEINMS, the software for neuromusculoskeletal modeling.
 
 .. note::
 
    This project is under active development.
 
-Contents
---------
+Table of Contents
+-----------------
 
-.. toctree::
-   :maxdepth: 2
+.. toctree:: 
+   :maxdepth: 1
    
-   Installation [Windows]
-   Compilation [Windows]
-   Execution [Windows]
-   Tutorial [Windows]
-   Troubleshooting [Windows]
+   Introduction <introduction>
+   Installation <Installation [Windows]>
+   Compilation <Compilation [Windows]>
+   Execution <Execution [Windows]>
+   Tutorial <Tutorial [Windows][Ubuntu]>
+   Troubleshooting <Troubleshooting [Windows]>
    Repositories
    

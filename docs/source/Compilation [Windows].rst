@@ -1,6 +1,6 @@
-=============================
-Compilation plugins [Windows]
-=============================
+===================
+Compilation plugins
+===================
 
 .. _Compile ref:
 
