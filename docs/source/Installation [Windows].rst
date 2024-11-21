@@ -1,70 +1,59 @@
-======================
-Installation [Windows]
-======================
+============
+Installation
+============
 
 .. _Download ref:
 
 Downloading files
 +++++++++++++++++
 
-For an up to date `readme <https://github.com/CEINMS-RT/CEINMS-RT_Installer/blob/master/README.md>`_ please follow the provided link. 
+For an up to date `README <https://github.com/CEINMS-RT/CEINMS-RT_Installer/blob/master/README.md>`_ 
+please follow the provided link. 
 
-Before we can install CEINMS, we need to get all the required files for installation.
-These can be found on GitHub. In order to download this repository
-without any issues, we will use Git to clone the repository onto our local machine.
-Make sure there is a recent version of `Github desktop <https://desktop.github.com/>`_
-with `Git Bash <https://www.atlassian.com/git/tutorials/git-bash>`_ installed. Now, open
-Git Bash so we can start the installation. \
-
-Move to a local folder like ``C:\Users\<NAME>\AppData\Local\CeinMS`` using the ``cd`` command
-followed by the path specified above and press enter. \
-You may experience Git Bash telling you there is no such path available. \
-For this error message, the fix might be to change the direction of the slash. \
-This will result in a file path like ``C:/Users/<NAME>/AppData/Local/CeinMS``.
-
-Now clone the `CEINMS installer <https://github.com/CEINMS-RT/CEINMS-RT_Installer>`_ repository 
-by clicking the ``clone`` button and pressing the copy button or copying
-
-.. code-block:: bash
-
-   git clone git@github.com:CEINMS-RT/CEINMS-RT_Installer.git
-
-After entering this code, Git Bash might ask for the passcode to the SSH key connected to GitHub,
-Simply enter the passcode and the installation will proceed. Now, if we take a look in the folder,
-we find a new folder entry called ``ceinms-installer``. Inside are all the dependencies required
-and a PowerShell script called ``installCEINMS.ps1``.
+Before we can install CEINMS, we need to get all the required files for
+installation.
+From the installer repo's `homepage <https://github.com/CEINMS-RT/CEINMS-RT_Installer>`_ on GitHub, 
+click on the green ``Code`` button, and then ``Download ZIP``.
+Unzip the file to a location of your choice.
+In the folder called ``CEINMS-RT_Installer-master`` you will find
+all the dependencies required and a PowerShell script called 
+``installCEINMS.ps1``.
 
 .. _Installation ref:
 
 Automatic installation
 ++++++++++++++++++++++
 
-Now that everything is download correctly, we can run the PowerShell script by running PowerShell in ``administrator`` mode.
-This will open a new PowerShell terminal. PowerShell can run with different clearance depending on the execution policy in place.
+Now that everything is download correctly, we can run the PowerShell script 
+by running PowerShell in ``administrator`` mode.
+This will open a new PowerShell terminal. PowerShell can run with different 
+clearance depending on the execution policy in place.
 To view the execution policy, run the command:
 
 .. code-block:: powershell
 
    Get-ExecutionPolicy
 
-Depending on the return, you may need to change your execution policy. To do this, simply run the command:
+Depending on the return, you may need to change your execution policy. To do 
+this, simply run the command:
 
 .. code-block:: powershell
 
-   Get-ExecutionPolicy UnRestricted
+   Set-ExecutionPolicy UnRestricted
 
-You might be prompted with a confirmation, to change the policy quickly, simply type ``A`` followed by ``Enter``. \
-Next, move to the local installation folder like ``C:\Users\<NAME>\AppData\Local\CeinMS\ceinms-installer`` using the ``cd`` command
-followed by the path specified above and press enter. \
-Now, run the following command to start the installation process:
+| You might be prompted with a confirmation, to change the policy quickly, simply type ``A`` followed by ``Enter``.
+| Next, move to the local installation folder using the ``cd`` command. Now, run the following command to start the installation process:
 
 .. code-block:: powershell
 
    ./installCEINMS.ps1
 
-This will activate the PowerShell script and start installing CEINMS. You can keep track of any errors that may occur
-during the installation process, Frequently encountered error messages and their corresponding fixes are listed
-in the :ref:`Troubleshooter <Trouble ref>`. If the installation goes on without issues, you should be greeted with a directory
-selection window issuing you to select the output directory of the source code. This can be the same as the directory
-used when downloading the installer; namely, ``C:\Users\<NAME>\AppData\Local\CeinMS``. This will create a new folder in that directory
-named ``ceinms-rt`` in which the source files are stored. We will use this folder during :ref:`compilation <Compile ref>`.
+This will activate the PowerShell script and start installing CEINMS. You can keep track of any errors that may occur 
+during the installation process.
+Frequently encountered error messages and their corresponding fixes are listed
+in the :ref:`Troubleshooting <Trouble ref>` section.
+If the installation goes on without issues, you should be greeted with a directory
+selection window issuing you to select the output directory of the source code.
+The installation script will create a new folder in the designated directory
+named ``ceinms-rt`` in which the source files are stored.
+We will use this folder in the :ref:`Compilation <Compile ref>` section.

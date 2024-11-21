@@ -1,6 +1,6 @@
-======================
-Compilation [Windows]
-======================
+===================
+Compilation plugins
+===================
 
 .. _Compile ref:
 
@@ -12,44 +12,23 @@ Setup
 
 .. _CMake ref:
 
-CMake-GUI
+CMake GUI
 +++++++++
 
-During the installation process, CMake-GUI has been installed on your system. We will now use this software to create
-a Visual Studio solution from which we can build the CEINMS executable. First, search for CMake-GUI by opening the Windows
-search bar. This can be done by pressing the Windows key and typing "cmake". After finding CMake-GUI, open it. \
+During the installation process, CMake has been installed on your system. We will now use this software to create
+a Visual Studio solution from which we can build the CEINMS plugins. First, search for the cmake-gui app by opening the Windows
+search bar. This can be done by pressing the Windows key and typing "cmake". After finding cmake-gui, open it.
+You will now be greeted with the GUI of CMake:
 
-You will now be greeted with the GUI of CMake, At the top of the window are two important fields: \
+.. image:: images/ceinms-cmake-1.png
+  :width: 400
 
-``Where is the source code`` and ``Where to build the binaries``. \
+* For field ``Where is the source code`` (1) fill in the path of the folder that was created during installation
+* For field ``Where to build the binaries`` (2) fill in a subfolder "/build"
+* Enable ``COMPILE_PLUGIN`` (3)
+* Press ``Configure`` (4)
+* Once configuration is complete, select the plugin(s) that you would like to compile
+* Press ``Generate`` (5)
+* Once generation is complete press ``Open Project`` to open the Visual Studio Project where you can perform the actual compilation
 
-These fields is where you fill in the CEINMS directories we downloaded earlier. For the example directory
-``C:/Users/<NAME>/AppData/Local``, the source code is stored in the directory ``C:/Users/<NAME>/AppData/Local/CeinMS/ceinms-rt``.
-The build directory can exist in the same folder, but it's recommended to add an extra directory layer like /build, which would make the build
-directory ``C:/Users/<NAME>/AppData/Local/CeinMS/ceinms-rt/build``.
-
-After defining these file paths, it's important to set the configuration of CMake to create a solution for the right version of Visual Studio.
-During the :ref:`installation <Installation ref>` of the dependencies, Visual Studio 2019 has been downloaded. Click on the **Configure button**
-and under **specify the generator for this project** choose **Visual Studio 16 2019**. Keep the other options default for a normal 64-bit windows installation.
-Press finish to complete
-
-Once CMake configures the solution, we can find the directory Glew has been installed in. Normally, Glew is installed in the ``Program Files (x86)`` folder. \
-
-In the CMake search bar, search for Glew. six options will arise. The following options will require the corresponding entries: \
-
-+-------------------------------+-------------------------------------------------------------+
-|**Name**                       |Value                                                        |
-+-------------------------------+-------------------------------------------------------------+
-|**GLEW_INCLUDE_DIR**           |C:/Program Files (x86)/glew-2.1.0/include                    |
-+-------------------------------+-------------------------------------------------------------+
-|**GLEW_SHARED_LIBRARY_RELEASE**|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32.lib |
-+-------------------------------+-------------------------------------------------------------+
-|**GLEW_STATIC_LIBRARY_RELEASE**|C:/Program Files (x86)/glew-2.1.0/lib/Release/x64/glew32s.lib|
-+-------------------------------+-------------------------------------------------------------+
-
-Now press generate and wait for the solution to be generated. \
-
-Once the generation is complete, press ``open project`` to open the project in Visual Studio. From here, on the right, there is a file tree with at the top ``ALL_BUILD``.
-Right click this folder and press ``Build``. This will now build CEINMS. \
-
-If any errors arise during this build, please refer to the :ref:`Troubleshooter <Trouble ref>`.
+To resolve any compilation errors arise during this build, please refer to the :ref:`Troubleshooting <Trouble ref>` section.
