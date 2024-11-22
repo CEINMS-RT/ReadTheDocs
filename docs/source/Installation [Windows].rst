@@ -48,7 +48,9 @@ this, simply run the command:
 
    ./installCEINMS.ps1
 
-This will activate the PowerShell script and start installing CEINMS-RT. You can keep track of any errors that may occur 
+This will activate the PowerShell script.
+As a first step all CEINMS-RT dependencies will be installed.
+You can keep track of any errors that may occur 
 during the installation process.
 Frequently encountered error messages and their corresponding fixes are listed
 in the :ref:`Troubleshooting <Trouble ref>` section.
@@ -57,3 +59,4 @@ selection window issuing you to select the output directory of the source code.
 The installation script will create a new folder in the designated directory
 named ``ceinms-rt`` in which the source files are stored.
 We will use this folder in the :ref:`Compilation <Compile ref>` section.
+As a final step the PowerShell script will compile the core of CEINMS-RT.
