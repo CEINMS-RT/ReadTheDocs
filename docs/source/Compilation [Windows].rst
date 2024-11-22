@@ -31,4 +31,4 @@ You will now be greeted with the GUI of CMake:
 * Press ``Generate`` (5)
 * Once generation is complete press ``Open Project`` to open the Visual Studio Project where you can perform the actual compilation
 
-To resolve any compilation errors arise during this build, please refer to the :ref:`Troubleshooting <Trouble ref>` section.
+To resolve any compilation errors that arise during this build, please refer to the :ref:`Troubleshooting <Trouble ref>` section.
