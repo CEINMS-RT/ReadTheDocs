@@ -2,7 +2,7 @@
 Welcome
 =======
 
-Welcome to CEINMS, the software for neuromusculoskeletal modeling.
+Welcome to CEINMS-RT, the software for neuromusculoskeletal modeling.
 
 .. note::
 

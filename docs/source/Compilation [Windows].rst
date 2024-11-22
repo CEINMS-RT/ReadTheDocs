@@ -7,8 +7,8 @@ Compilation plugins
 Setup
 -----
 
-.. important:: Make sure the newest version of CEINMS is installed on your system before proceeding to this section.
-    A guide to installing CEINMS can be found in the :ref:`Installation section <Download ref>`.
+.. important:: Make sure the newest version of CEINMS-RT is installed on your system before proceeding to this section.
+    A guide to installing CEINMS-RT can be found in the :ref:`Installation section <Download ref>`.
 
 .. _CMake ref:
 
@@ -16,7 +16,7 @@ CMake GUI
 +++++++++
 
 During the installation process, CMake has been installed on your system. We will now use this software to create
-a Visual Studio solution from which we can build the CEINMS plugins. First, search for the cmake-gui app by opening the Windows
+a Visual Studio solution from which we can build the CEINMS-RT plugins. First, search for the cmake-gui app by opening the Windows
 search bar. This can be done by pressing the Windows key and typing "cmake". After finding cmake-gui, open it.
 You will now be greeted with the GUI of CMake:
 

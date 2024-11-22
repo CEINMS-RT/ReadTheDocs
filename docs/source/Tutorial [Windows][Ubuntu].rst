@@ -110,7 +110,7 @@ After execution the folder ``cfg\SplineCoeff`` will contain files named ``UpperL
 Usage
 +++++
 
-Now that we created the spline coefficients, we can run CEINMS and witness our creation:
+Now that we created the spline coefficients, we can run CEINMS-RT and witness our creation:
 
 .. code-block:: console
 

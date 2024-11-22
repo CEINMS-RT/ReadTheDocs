@@ -7,7 +7,7 @@ Troubleshooting
 Contents
 --------
 
-When encountering issues with CEINMS, the following solutions might be adequate:
+When encountering issues with CEINMS-RT, the following solutions might be adequate:
 
 .. _TS repo access:
 

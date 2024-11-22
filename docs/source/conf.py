@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'CEINMS'
-copyright = '2023, CEINMS'
-author = 'CEINMS'
+project = 'CEINMS-RT'
+copyright = '2023, CEINMS-RT'
+author = 'CEINMS-RT'
 
 release = '0.1'
 version = '0.1.1'

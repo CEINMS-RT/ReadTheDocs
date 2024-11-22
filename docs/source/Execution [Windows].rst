@@ -10,7 +10,7 @@ Modifiers and definitions
 XML files
 +++++++++
 
-Now that CEINMS is installed and compiled, we need to create and define the parameters of the neuromusculoskeletal model.
+Now that CEINMS-RT is installed and compiled, we need to create and define the parameters of the neuromusculoskeletal model.
 Three examples are shown in the :ref:`Tutorials <Tutorial ref>`. The definitions of the simulation are defined in two **XML** files
 that link to 3D models, connections, forces, loads, filters, etc. These **XML** files are called the subject and the execution file. \
 
@@ -53,12 +53,12 @@ Next to the XML files, there are a few modifiers available to the user, these ar
 +---------------+--------------------------------------------------------------+  
 |``-s <string>``| ``--subject <string>``                                       |
 +---------------+--------------------------------------------------------------+                                
-|(required) Subject specific for CEINMS xml file. See subject.xsd in           |                                                                    
+|(required) Subject specific for CEINMS-RT xml file. See subject.xsd in        |                                                                    
 |XSD directory for more information.                                           |                                    
 +---------------+--------------------------------------------------------------+  
 |``-t <double>``|``--timer <double>``                                          |                                    
 +---------------+--------------------------------------------------------------+                             
-|(optional) Kill CEINMS & GUI after a given time (in seconds).                 |                                                              
+|(optional) Kill CEINMS-RT & GUI after a given time (in seconds).              |                                                              
 +---------------+--------------------------------------------------------------+  
 |``--``         |``--ignore_rest``                                             |                                    
 +---------------+--------------------------------------------------------------+                  

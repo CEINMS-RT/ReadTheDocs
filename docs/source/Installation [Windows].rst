@@ -10,7 +10,7 @@ Downloading files
 For an up to date `README <https://github.com/CEINMS-RT/CEINMS-RT_Installer/blob/master/README.md>`_ 
 please follow the provided link. 
 
-Before we can install CEINMS, we need to get all the required files for
+Before we can install CEINMS-RT, we need to get all the required files for
 installation.
 From the installer repo's `homepage <https://github.com/CEINMS-RT/CEINMS-RT_Installer>`_ on GitHub, 
 click on the green ``Code`` button, and then ``Download ZIP``.
@@ -48,7 +48,7 @@ this, simply run the command:
 
    ./installCEINMS.ps1
 
-This will activate the PowerShell script and start installing CEINMS. You can keep track of any errors that may occur 
+This will activate the PowerShell script and start installing CEINMS-RT. You can keep track of any errors that may occur 
 during the installation process.
 Frequently encountered error messages and their corresponding fixes are listed
 in the :ref:`Troubleshooting <Trouble ref>` section.

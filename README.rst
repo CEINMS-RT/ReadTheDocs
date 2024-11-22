@@ -1,1 +1,1 @@
-A mock-up documentation of the CEINMS open-source project.
+A mock-up documentation of the CEINMS-RT open-source project.
