@@ -7,6 +7,8 @@ Welcome to CEINMS-RT, the software for neuromusculoskeletal modeling.
 .. note::
 
    This project is under active development.
+   For now we will only cover using CEINMS-RT on Windows.
+   But in the future we will also cover using CEINMS-RT on Linux.
 
 Table of Contents
 -----------------
