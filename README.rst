@@ -1,1 +1,3 @@
-A mock-up documentation of the CEINMS-RT open-source project.
+Documentation of the CEINMS-RT open-source project.
+
+Please visit https://ceinms-docs.readthedocs.io
