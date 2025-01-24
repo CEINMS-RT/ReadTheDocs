@@ -13,10 +13,9 @@ please follow the provided link.
 Before we can install CEINMS-RT, we need to get all the required files for
 installation.
 From the installer repo's `homepage <https://github.com/CEINMS-RT/CEINMS-RT_Installer>`_ on GitHub, 
-click on the green ``Code`` button, and then ``Download ZIP``.
-Unzip the file to a location of your choice.
-In the folder called ``CEINMS-RT_Installer-master`` you will find
-all the dependencies required and a PowerShell script called 
+click on the green ``Code`` button, and then copy the clone url to the clipboard.
+Clone the repository to a location of your choice.
+After cloning you will find all the dependencies required and a PowerShell script called 
 ``installCEINMS.ps1``.
 
 .. _Installation ref:
