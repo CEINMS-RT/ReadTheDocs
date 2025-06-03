@@ -24,3 +24,10 @@ Models
 * `Back Model <https://github.com/CEINMS-RT/BackModel>`_
 * `Lower Limb Model <https://github.com/CEINMS-RT/LowerLimbModel>`_
 * `Upper Limb Model <https://github.com/CEINMS-RT/UpperLimbModel>`_
+
+Plugin Templates
+----------------
+
+* `Sample EMG & Angle <https://github.com/CEINMS-RT/ceinmsrt-plugin-sample-emg-angle-cpp>`_
+* `Sample Angle, EMG & Consumer <https://github.com/CEINMS-RT/ceinmsrt-plugin-sample-angle-emg-consumer-cpp>`_
+* `Sample Angle & Consumer <https://github.com/CEINMS-RT/ceinmsrt-plugin-sample-angle-consumer-cpp>`_
