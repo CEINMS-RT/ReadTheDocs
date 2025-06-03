@@ -6,8 +6,8 @@ project = 'CEINMS-RT'
 copyright = '2023, CEINMS-RT'
 author = 'CEINMS-RT'
 
-release = '0.2'
-version = '0.2'
+release = '1.1'
+version = '1.1'
 
 # -- General configuration
 
