@@ -89,3 +89,8 @@ into:
   :lineno-start: 104
 
   xercesc_3_1::DOMDocument& doc (*e.getOwnerDocument ());
+
+Issues
+------
+
+`GitHub <https://github.com/CEINMS-RT/ceinmsrt-core-cpp/issues>`_
