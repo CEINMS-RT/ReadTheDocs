@@ -24,19 +24,19 @@ Usage
 
 .. code-block:: console
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibration.xml -p cfg\LowerLimbModel\data\run81  -g
+    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\run81  -g
 
 You should see a window with on the left side EMG data and on the right side a running skeleton.
 
 .. code-block:: console
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibration.xml -p cfg\LowerLimbModel\data\walk36  -g
+    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk36  -g
 
 You should see a window with on the left side EMG data and on the right side a walking skeleton.
 
 .. code-block:: console
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibration.xml -p cfg\LowerLimbModel\data\walk45  -g
+    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk45  -g
 
 You should see a window with on the left side EMG data and on the right side a walking skeleton.
 

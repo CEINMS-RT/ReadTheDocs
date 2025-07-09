@@ -6,8 +6,8 @@ project = 'CEINMS-RT'
 copyright = '2023, CEINMS-RT'
 author = 'CEINMS-RT'
 
-release = '0.1'
-version = '0.1.1'
+release = '1.1'
+version = '1.1'
 
 # -- General configuration
 
@@ -33,7 +33,7 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
-html_logo = "images/CEINMS.png"
+html_logo = "images/logo-ceinms-rt-white-128.png"
 html_theme_options = {
     'logo_only': True,
     'display_version': False,
