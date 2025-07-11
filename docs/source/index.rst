@@ -23,4 +23,5 @@ Table of Contents
    Tutorial <Tutorial [Windows][Ubuntu]>
    Troubleshooting <Troubleshooting [Windows]>
    Repositories
+   What's New in the Latest Version of CEINMS-RT? <whatsnew>
    
