@@ -13,4 +13,4 @@ What's New in CEINMS-RT 1.1?
 - New logo with version number and contributor list.
 - New repositories with sample code for Angle, EMG and/or Consumer plugins.
 - Install script downloads and installs CMake 3.31.8.
-- Fixes various typo's in Tutorial.
+- Various typos in Tutorial were corrected.
