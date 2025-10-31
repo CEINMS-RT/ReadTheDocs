@@ -35,28 +35,32 @@ Plugin Templates
 
 Read The Docs
 ----------------
-If you wish to build the documentation locally, for example to test pull-requests that improve it, do:
+If you wish to build the documentation locally, you can do the following steps:
 
 Clone the ReadTheDocs repository: 
+
 .. code-block:: console
 
     git clone https://github.com/CEINMS-RT/ReadTheDocs.git
 
 
-Go to the doc/ directory: cd doc
+Go to the doc/ directory:
+
 .. code-block:: console
 
     cd ReadTheDocs/docs
 
 
 Install the dependencies: 
+
 .. code-block:: console
 
     pip install -r requirements.txt
 
 Build the HTML: 
+
 .. code-block:: console
 
     make html
 
-Open _build/html/index.html in your browser of choice.
+Navigate to the build folder and open build/html/index.html in a browser.
