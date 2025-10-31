@@ -31,3 +31,32 @@ Plugin Templates
 * `Sample EMG & Angle <https://github.com/CEINMS-RT/ceinmsrt-plugin-sample-emg-angle-cpp>`_
 * `Sample Angle, EMG & Consumer <https://github.com/CEINMS-RT/ceinmsrt-plugin-sample-angle-emg-consumer-cpp>`_
 * `Sample Angle & Consumer <https://github.com/CEINMS-RT/ceinmsrt-plugin-sample-angle-consumer-cpp>`_
+
+
+Read The Docs
+----------------
+If you wish to build the documentation locally, for example to test pull-requests that improve it, do:
+
+Clone the ReadTheDocs repository: 
+.. code-block:: console
+
+    git clone https://github.com/CEINMS-RT/ReadTheDocs.git
+
+
+Go to the doc/ directory: cd doc
+.. code-block:: console
+
+    cd ReadTheDocs/docs
+
+
+Install the dependencies: 
+.. code-block:: console
+
+    pip install -r requirements.txt
+
+Build the HTML: 
+.. code-block:: console
+
+    make html
+
+Open _build/html/index.html in your browser of choice.
