@@ -19,6 +19,7 @@ Table of Contents
    Introduction <introduction>
    Installation <Installation [Windows]>
    Compilation <Compilation [Windows]>
+   Calibration <Calibrate>
    Execution <Execution [Windows]>
    Tutorial <Tutorial [Windows][Ubuntu]>
    Troubleshooting <Troubleshooting [Windows]>

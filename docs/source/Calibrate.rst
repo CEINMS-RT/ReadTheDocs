@@ -33,7 +33,8 @@ Calibration in CEINMS-RT is a two-step process:
     1. Spline computation: This step computes the muscle excitations from the EMG data using spline interpolation.  
     2. Simulated annealing: This step optimizes the NMS model parameters to minimize the difference between the simulated muscle excitations and the recorded EMG data.
 
-Calibration options and parameters can be found in the config file, for example which DOFs to calibrate (see example below).
+Calibration options and parameters are stored in an XML file.
+The name and location of this file should be specified using the "-s" parameter (see example below).
 
 .. code-block:: console
 
