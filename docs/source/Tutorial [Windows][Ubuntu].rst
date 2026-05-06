@@ -22,21 +22,39 @@ The ``LowerLimbModel`` folder should contain a subfolder called ``SplineCoeff`` 
 Usage
 +++++
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\run81  -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\run81 -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/data/subjectCalibrated.xml -p cfg/LowerLimbModel/data/run81 -g
 
 You should see a window with on the left side EMG data and on the right side a running skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk36  -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk36 -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/data/subjectCalibrated.xml -p cfg/LowerLimbModel/data/walk36 -g
 
 You should see a window with on the left side EMG data and on the right side a walking skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk45  -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk45 -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/data/subjectCalibrated.xml -p cfg/LowerLimbModel/data/walk45 -g
 
 You should see a window with on the left side EMG data and on the right side a walking skeleton.
 

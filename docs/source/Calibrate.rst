@@ -35,9 +35,15 @@ Configuration
 Calibration options and parameters are stored in an XML file.
 The name and location of this file should be specified using the "-s" parameter (see example below).
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\calibrate.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\Calibration.xml
+   .. code-tab:: s Windows
+
+      .\bin\Win\Debug\calibrate.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\Calibration.xml -g
+
+   .. code-tab:: s Linux
+
+      ./bin/Unix/calibrate -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/Calibration.xml -g
 
 Calibration in CEINMS-RT is a two-step process:
     1. Spline computation: This step computes the muscle excitations from the EMG data using spline interpolation.  
@@ -48,74 +54,3 @@ Calibration in CEINMS-RT is a two-step process:
     :lines: 31-33
     :caption: Example of DOFs to calibrate in the config file.
 
-.. tabs::
-
-   .. code-tab:: c
-
-         C Main Function
-
-   .. code-tab:: c++
-
-         C++ Main Function
-
-   .. code-tab:: py
-
-         Python Main Function
-
-   .. code-tab:: java
-
-         Java Main Function
-
-   .. code-tab:: julia
-
-         Julia Main Function
-
-   .. code-tab:: fortran
-
-         Fortran Main Function
-
-   .. code-tab:: r R
-
-         R Main Function
-
-.. tabs::
-
-   .. code-tab:: c
-
-         int main(const int argc, const char **argv) {
-         return 0;
-         }
-
-   .. code-tab:: c++
-
-         int main(const int argc, const char **argv) {
-         return 0;
-         }
-
-   .. code-tab:: py
-
-         def main():
-            return
-
-   .. code-tab:: java
-
-         class Main {
-            public static void main(String[] args) {
-            }
-         }
-
-   .. code-tab:: julia
-
-         function main()
-         end
-
-   .. code-tab:: fortran
-
-         PROGRAM main
-         END PROGRAM main
-
-   .. code-tab:: r R
-
-         main <- function() {
-            return(0)
-         }
