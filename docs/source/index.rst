@@ -17,7 +17,8 @@ Table of Contents
    :maxdepth: 1
    
    Introduction <introduction>
-   Installation <Installation [Windows]>
+   Installation on Windows <Installation [Windows]>
+   Installation on Linux <Installation [Linux]>
    Compilation <Compilation [Windows]>
    Calibration <Calibrate>
    Execution <Execution [Windows]>
