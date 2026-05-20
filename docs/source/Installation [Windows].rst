@@ -1,6 +1,6 @@
-============
-Installation
-============
+=======================
+Installation on Windows
+=======================
 
 .. _Download ref:
 
@@ -40,22 +40,26 @@ this, simply run the command:
 
    Set-ExecutionPolicy UnRestricted
 
-| You might be prompted with a confirmation, to change the policy quickly, simply type ``A`` followed by ``Enter``.
-| Next, move to the local installation folder using the ``cd`` command. Now, run the following command to start the installation process:
+| You might be prompted with a confirmation, to change the policy quickly, simply type :kbd:`A` followed by :kbd:`Enter`.
+| Next, move to the local installation folder using the :command:`cd` command. Now, run the following command to start the installation process:
 
 .. code-block:: powershell
 
    ./installCEINMS.ps1
 
 This will activate the PowerShell script.
+
 As a first step all CEINMS-RT dependencies will be installed.
 You can keep track of any errors that may occur 
 during the installation process.
+
 Frequently encountered error messages and their corresponding fixes are listed
 in the :ref:`Troubleshooting <Trouble ref>` section.
-If the installation goes on without issues, you should be greeted with a directory
+
+If the installation proceeds without errors, you should be greeted with a directory
 selection window issuing you to select the output directory of the source code.
 The installation script will create a new folder in the designated directory
 named ``ceinms-rt`` in which the source files are stored.
 We will use this folder in the :ref:`Compilation <Compile ref>` section.
+
 As a final step the PowerShell script will compile the core of CEINMS-RT.
