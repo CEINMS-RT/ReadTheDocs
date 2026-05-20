@@ -37,8 +37,7 @@ templates_path = ['_templates']
 html_theme = 'sphinx_rtd_theme'
 html_logo = "images/logo-ceinms-rt-white-128.png"
 html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
+    'logo_only': True
 }
 
 copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
