@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'CEINMS-RT'
-copyright = '2023, CEINMS-RT'
+copyright = '2026, CEINMS-RT'
 author = 'CEINMS-RT'
 
 release = '1.1'
