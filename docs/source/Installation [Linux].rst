@@ -1,8 +1,11 @@
-======================
-Installation [Ubuntu]
-======================
+=====================
+Installation on Linux
+=====================
 
-.. _Installation-Ubuntu ref:
+.. _Installation-Linux ref:
+
+`Qt Downloads <https://download.qt.io/official_releases/online_installers/>`_
+
 .. code-block:: shell-session
 
    sudo apt-get install cmake-gui libboost-all-dev xsdcxx qtbase5-dev libglew-dev git g++ libblas-dev liblapack-dev libxerces-c-dev libtbb-dev freeglut3-dev libeigen3-dev libboost-all-dev
