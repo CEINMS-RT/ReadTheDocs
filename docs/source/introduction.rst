@@ -2,11 +2,11 @@
 Introduction
 ============
 
-In :ref:`Installation <Download ref>` is explained how to install third-party dependencies and build the core of CEINMS-RT.
+How to install third-party dependencies and build the core of CEINMS-RTI is explained in :ref:`Installation in Windows <Download ref>` and :ref:`Installation in Linux <installation-linux ref>`.
 
 The compilation of plugins is covered in :ref:`Compilation <Compile ref>`.
 
-The command-line interface for CEINMS-RT is the executable **CEINMS.exe**.
+The command-line interface for CEINMS-RT is the executable :command:`CEINMS`.
 The usage of this executable and its command-line arguments is described in :ref:`Execution <exe ref>`.
 
 To learn how to calibrate and execute models :ref:`Tutorial <Tutorial ref>` details the steps needed to configure and execute CEINMS-RT using three example models.
