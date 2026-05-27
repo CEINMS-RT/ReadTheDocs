@@ -7,6 +7,12 @@ What's New in the Latest Version of CEINMS-RT?
 This section will cover the latest changes and improvements made to CEINMS-RT.
 It will include new features, bug fixes, and any other relevant updates that enhance the functionality and usability of the software.
 
+What's New in CEINMS-RT 1.3?
+----------------------------
+
+- Install and build on Linux (AMD64 and ARM64).
+- New repositories for OSL and COAPT plugins.
+
 What's New in CEINMS-RT 1.1?
 ----------------------------
 
