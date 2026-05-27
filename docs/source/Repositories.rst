@@ -17,6 +17,8 @@ Source Code
 * `TwinCAT EMG PLugin <https://github.com/CEINMS-RT/ceinmsrt-plugin-twincatemg-cpp>`_
 * `UDP Plugin <https://github.com/CEINMS-RT/ceinmsrt-plugin-udp-cpp>`_
 * `Xsens Plugin <https://github.com/CEINMS-RT/ceinmsrt-plugin-xsens-cpp>`_
+* `OSL Plugin <https://github.com/CEINMS-RT/ceinmsrt-plugin-osl-unix-socket-cpp>`_
+* `COAPT Plugin <https://github.com/CEINMS-RT/ceinmsrt-plugin-coapt-unix-socket-cpp>`_
 
 Models
 ------
