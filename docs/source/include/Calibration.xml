@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<!--
+This source code is part of:
+
+"CEINMS-RT: an open-source framework for the continuous neuro-mechanical model-based control of wearable robots".
+Copyright (C) 2024 Massimo Sartori, Mohamed Irfan Refai, Lucas Avanci Gaudio, Christopher Pablo Cop, Donatella Simonetti, Federica Damonte, David G. Lloyd, Claudio Pizzolato, Guillaume Durandau.
+
+CEINMS-RT is an open-source software. Any changes to this code, should be shared back in the open repository: https://github.com/CEINMS-RT. See license as described here: https://github.com/CEINMS-RT/ceinmsrt-core-cpp/blob/main/LICENSE.
+
+The methodologies and ideas implemented in this code are described in the manuscripts below, which should be cited in all publications making use of this code:
+
+Massimo Sartori, Mohamed Irfan Refai, Lucas Avanci Gaudio, Christopher Pablo Cop, Donatella Simonetti, Federica Damonte, David G. Lloyd, Claudio Pizzolato, Guillaume Durandau., (2024) "CEINMS-RT: an open-source framework for the continuous neuro-mechanical model-based control of wearable robots. TechRxiv. DOI: 10.36227/techrxiv.173397962.28177284/v1"
+-->
+<simulatedAnnealing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../XSD/simulatedAnnealing.xsd">
+        
+	<EMGProccesing>cfg/LowerLimbModel/executionEMG.xml</EMGProccesing>
+	<osimFile>cfg/LowerLimbModel/model/gait2392.osim</osimFile>
+	<subjectXML>cfg/LowerLimbModel/data/gait2392_simbody_marker_ankle_knee_hip_r.xml</subjectXML>
+	<nameOfSubject>LowerLimbModel</nameOfSubject>
+	<dofsSpline>ankle_angle_r knee_angle_r hip_flexion_r</dofsSpline>
+	<computeSpline>
+		<use>false</use>
+		<printingOption>3</printingOption>
+		<numberOfNode>9</numberOfNode>
+	</computeSpline>
+	<calibration>
+		<use>true</use>
+		<objectiveFunction>StrengthCoefficients_ShapeFactor_TendonSlackLength_single</objectiveFunction>
+		<EMD>0.1</EMD>
+		<dofToCalibrate>
+			<dofs>ankle_angle_r</dofs>
+		</dofToCalibrate>
+		<trials>
+			<directory>cfg/LowerLimbModel/data/</directory>
+			<trial>
+				<trialName>walk36</trialName>
+				<cropMinTimeFromZero>19</cropMinTimeFromZero>
+				<cropMaxTimeFromZero>24</cropMaxTimeFromZero>
+			</trial>
+		</trials>
+		<option>
+			<noEpsilon>2</noEpsilon>
+			<epsilon>1.E-3</epsilon>
+			<maxNoEval>100000</maxNoEval>
+		</option>
+		<inputSubjectXMLName>gait2392_simbody_marker_ankle_knee_hip_r.xml</inputSubjectXMLName>
+		<outputSubjectXMLName>SubjectCalibrated.xml</outputSubjectXMLName>
+	</calibration>
+</simulatedAnnealing>        

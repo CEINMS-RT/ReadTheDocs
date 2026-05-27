@@ -22,21 +22,39 @@ The ``LowerLimbModel`` folder should contain a subfolder called ``SplineCoeff`` 
 Usage
 +++++
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\run81  -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\run81 -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/data/subjectCalibrated.xml -p cfg/LowerLimbModel/data/run81 -g
 
 You should see a window with on the left side EMG data and on the right side a running skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk36  -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk36 -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/data/subjectCalibrated.xml -p cfg/LowerLimbModel/data/walk36 -g
 
 You should see a window with on the left side EMG data and on the right side a walking skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk45  -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\LowerLimbModel\executionRT.xml -s .\cfg\LowerLimbModel\data\subjectCalibrated.xml -p cfg\LowerLimbModel\data\walk45 -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/data/subjectCalibrated.xml -p cfg/LowerLimbModel/data/walk45 -g
 
 You should see a window with on the left side EMG data and on the right side a walking skeleton.
 
@@ -59,27 +77,51 @@ The ``BackModel`` folder should contain a subfolder called ``Spline coefficents`
 Usage
 +++++
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\squat5kg" -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\squat5kg" -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e cfg/BackModel/Configuration\ files/executionRT.xml -s cfg/BackModel/CEINMS\ models/lumbarModel_calibrated.xml -p cfg/BackModel/Sample\ data/squat5kg -g
 
 You should see a window with on the left side EMG data and on the right side a squating skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\squat15kg" -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\squat15kg" -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e cfg/BackModel/Configuration\ files/executionRT.xml -s cfg/BackModel/CEINMS\ models/lumbarModel_calibrated.xml -p cfg/BackModel/Sample\ data/squat15kg -g
 
 You should see a window with on the left side EMG data and on the right side a squating skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\stoop5kg" -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\stoop5kg" -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e cfg/BackModel/Configuration\ files/executionRT.xml -s cfg/BackModel/CEINMS\ models/lumbarModel_calibrated.xml -p cfg/BackModel/Sample\ data/stoop5kg -g
 
 You should see a window with on the left side EMG data and on the right side a stooping skeleton.
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\stoop15kg" -g
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\CEINMS.exe -e "cfg\BackModel\Configuration files\executionRT.xml" -s "cfg\BackModel\CEINMS models\lumbarModel_calibrated.xml" -p "cfg\BackModel\Sample data\stoop15kg" -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e cfg/BackModel/Configuration\ files/executionRT.xml -s cfg/BackModel/CEINMS\ models/lumbarModel_calibrated.xml -p cfg/BackModel/Sample\ data/stoop15kg -g
 
 You should see a window with on the left side EMG data and on the right side a stooping skeleton.
 
@@ -101,9 +143,15 @@ Calibrate
 
 Next, we are going to calibrate the model using ``calibrate.exe``:
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\calibrate.exe -e .\cfg\UpperLimbModel\executionRT.xml -s .\cfg\UpperLimbModel\simulatedAnnealing.xml
+    .. code-tab:: s Windows
+
+        .\bin\Win\Debug\calibrate.exe -e .\cfg\UpperLimbModel\executionRT.xml -s .\cfg\UpperLimbModel\simulatedAnnealing.xml
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/calibrate -e ./cfg/UpperLimbModel/executionRT.xml -s ./cfg/UpperLimbModel/simulatedAnnealing.xml
 
 After execution the folder ``cfg\SplineCoeff`` will contain files named ``UpperLimbModel_Coefficients_[0-3].bin``.
 
@@ -112,8 +160,14 @@ Usage
 
 Now that we created the spline coefficients, we can run CEINMS-RT and witness our creation:
 
-.. code-block:: console
+.. tabs::
 
-    .\bin\Win\Debug\CEINMS.exe -e .\cfg\UpperLimbModel\ExecutionRT.xml -s .\cfg\UpperLimbModel\Right_arm.xml -g
+    .. code-tab:: s Windows
 
+        .\bin\Win\Debug\CEINMS.exe -e .\cfg\UpperLimbModel\ExecutionRT.xml -s .\cfg\UpperLimbModel\Right_arm.xml -g
+
+    .. code-tab:: s Linux
+
+        ./bin/Unix/CEINMS -e ./cfg/UpperLimbModel/ExecutionRT.xml -s ./cfg/UpperLimbModel/Right_arm.xml -g
+        
 You should see a window with on the left side EMG data and on the right side a skeleton with only a right arm.

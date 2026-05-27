@@ -1,3 +1,4 @@
 sphinx-copybutton
 sphinx_rtd_theme
 jinja2
+sphinx-tabs

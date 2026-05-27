@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'CEINMS-RT'
-copyright = '2023, CEINMS-RT'
+copyright = '2026, CEINMS-RT'
 author = 'CEINMS-RT'
 
 release = '1.1'
@@ -19,7 +19,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'sphinx_tabs.tabs',
+    'sphinx_rtd_theme'
 ]
 
 intersphinx_mapping = {
@@ -35,8 +37,7 @@ templates_path = ['_templates']
 html_theme = 'sphinx_rtd_theme'
 html_logo = "images/logo-ceinms-rt-white-128.png"
 html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
+    'logo_only': True
 }
 
 copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
