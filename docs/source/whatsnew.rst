@@ -11,7 +11,6 @@ What's New in CEINMS-RT 1.3?
 ----------------------------
 
 - Install and build on Linux (AMD64 and ARM64).
-- New repositories for OSL and COAPT plugins.
 
 What's New in CEINMS-RT 1.1?
 ----------------------------
