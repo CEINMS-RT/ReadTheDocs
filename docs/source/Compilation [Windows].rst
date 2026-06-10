@@ -34,4 +34,13 @@ You will now be greeted with the GUI of CMake:
 * Press :guilabel:`Generate` (5)
 * Once generation is complete press :guilabel:`Open Project` to open the Visual Studio Project where you can perform the actual compilation
 
+Command Line cmake tool
++++++++++++++++++++++++
+
+.. code-block:: shell-session
+
+   cd build
+   cmake .. -DCOMPILE_PLUGIN=ON -DCOMPILE_OSL_PLUGIN=ON ...
+
 To resolve any compilation errors that arise during this build, please refer to the :ref:`Troubleshooting <Trouble ref>` section.
+See :menuselection:`Admin --> Environment variables`

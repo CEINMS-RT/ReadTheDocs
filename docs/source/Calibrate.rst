@@ -32,7 +32,7 @@ Use subfolders to organize multiple trials, for example:
 Configuration
 -------------
 
-Calibration options and parameters are stored in an XML file.
+Calibration options and parameters are stored in a XML file.
 The name and location of this file should be specified using the "-s" parameter (see example below).
 
 .. tabs::
@@ -46,11 +46,22 @@ The name and location of this file should be specified using the "-s" parameter 
       ./bin/Unix/calibrate -e ./cfg/LowerLimbModel/executionRT.xml -s ./cfg/LowerLimbModel/Calibration.xml -g
 
 Calibration in CEINMS-RT is a two-step process:
+
     1. Spline computation: This step computes the muscle excitations from the EMG data using spline interpolation.  
     2. Simulated annealing: This step optimizes the NMS model parameters to minimize the difference between the simulated muscle excitations and the recorded EMG data.
 
+The example command line shown above will execute *one* of the two steps, depending on the configuration specified in the XML file:
+
+    * If the "use" parameter in the "computeSpline" section is set to "true", the program will execute the spline computation step.
+    * If the "use" parameter in the "calibration" section is set to "true", the program will execute the simulated annealing step.
+
+.. literalinclude:: /include/compute-spline.xml
+    :language: xml
+    :lines: 22,23,26-28,49
+    :caption: Spline computation configuration.
+
 .. literalinclude:: /include/Calibration.xml
     :language: xml
-    :lines: 31-33
-    :caption: Example of DOFs to calibrate in the config file.
+    :lines: 22,23,26-28,49
+    :caption: Simulated annealing configuration.
 
